@@ -1,0 +1,82 @@
+db.getCollection('devicetypes').insertMany([
+    {
+        "name": "Device Type 21",
+        "description": "Description for Device Type 21"
+      },
+      {
+        "name": "Device Type 22",
+        "description": "Description for Device Type 22"
+      },
+      {
+        "name": "Device Type 23",
+        "description": "Description for Device Type 23"
+      },
+      {
+        "name": "Device Type 24",
+        "description": "Description for Device Type 24"
+      },
+      {
+        "name": "Device Type 25",
+        "description": "Description for Device Type 25"
+      },
+      {
+        "name": "Device Type 26",
+        "description": "Description for Device Type 26"
+      },
+      {
+        "name": "Device Type 27",
+        "description": "Description for Device Type 27"
+      },
+      {
+        "name": "Device Type 28",
+        "description": "Description for Device Type 28"
+      },
+      {
+        "name": "Device Type 29",
+        "description": "Description for Device Type 29"
+      },
+      {
+        "name": "Device Type 30",
+        "description": "Description for Device Type 30"
+      },
+      {
+        "name": "Device Type 31",
+        "description": "Description for Device Type 31"
+      },
+      {
+        "name": "Device Type 32",
+        "description": "Description for Device Type 32"
+      },
+      {
+        "name": "Device Type 33",
+        "description": "Description for Device Type 33"
+      },
+      {
+        "name": "Device Type 34",
+        "description": "Description for Device Type 34"
+      },
+      {
+        "name": "Device Type 35",
+        "description": "Description for Device Type 35"
+      },
+      {
+        "name": "Device Type 36",
+        "description": "Description for Device Type 36"
+      },
+      {
+        "name": "Device Type 37",
+        "description": "Description for Device Type 37"
+      },
+      {
+        "name": "Device Type 38",
+        "description": "Description for Device Type 38"
+      },
+      {
+        "name": "Device Type 39",
+        "description": "Description for Device Type 39"
+      },
+      {
+        "name": "Device Type 40",
+        "description": "Description for Device Type 40"
+      }
+])

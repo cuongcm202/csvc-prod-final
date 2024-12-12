@@ -1,0 +1,12 @@
+include ../../main.pug
+
+.container.mt-5
+  h2 Thêm mới loại thiết bị
+  form(action='/devicetypes/add' method='POST')
+    .mb-3
+      label.form-label(for='nameInput') Tên
+      input#nameInput.form-control(type='text' name='name' required='')
+    .mb-3
+      label.form-label(for='descriptionInput') Mô tả
+      textarea#descriptionInput.form-control(name='description')
+    button.btn.btn-primary.w-100(type='submit') Tạo mới

@@ -1,0 +1,76 @@
+include ../../main.pug
+link(href='/css/user/bioPage.css' rel='stylesheet')
+
+.container.rounded.bg-white.mt-5.mb-5
+  .row
+    .col-md-3.border-right
+      .d-flex.flex-column.align-items-center.text-center.p-3.py-5
+        img.rounded-circle.mt-5(width='150px' src='https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg')
+        span.font-weight-bold #{data.fullname}
+        span.text-black-50 #{data.email}
+        span  
+    .col-md-9.border-right
+      .p-3.py-5
+        .d-flex.justify-content-between.align-items-center.mb-3
+          h4.text-right Thông tin hồ sơ
+        .row.mt-2
+          .col-md-6
+            label.labels Tên đầy đủ
+            input.form-control(type='text' value=data.fullname readonly)
+          .col-md-6
+            label.labels Tên người dùng
+            input.form-control(type='text' value=data.username readonly)
+        .row.mt-3
+          .col-md-12.mt-2
+            label.labels Vai trò
+            input.form-control(type='text' value=`${data.role == 'admin' ? 'Quản trị viên' : `${data.role == 'moderator' ? 'Kiểm duyệt viên' : 'Khách'}`}` readonly)
+          .col-md-12.mt-2
+            label.labels Số điện thoại
+            input.form-control(type='text' value=data.phone readonly)
+          .col-md-12.mt-2
+            label.labels Email
+            input.form-control(type='text' value=data.email readonly)
+        //-   .col-md-12
+        //-     label.labels Address Line 2
+        //-     input.form-control(type='text' placeholder='enter address line 2' value='')
+        //-   .col-md-12
+        //-     label.labels Postcode
+        //-     input.form-control(type='text' placeholder='enter address line 2' value='')
+        //-   .col-md-12
+        //-     label.labels State
+        //-     input.form-control(type='text' placeholder='enter address line 2' value='')
+        //-   .col-md-12
+        //-     label.labels Area
+        //-     input.form-control(type='text' placeholder='enter address line 2' value='')
+        //-   .col-md-12
+        //-     label.labels Email ID
+        //-     input.form-control(type='text' placeholder='enter email id' value='')
+        //-   .col-md-12
+        //-     label.labels Education
+        //-     input.form-control(type='text' placeholder='education' value='')
+        //- .row.mt-3
+        //-   .col-md-6
+        //-     label.labels Country
+        //-     input.form-control(type='text' placeholder='country' value='')
+        //-   .col-md-6
+        //-     label.labels State/Region
+        //-     input.form-control(type='text' value='' placeholder='state')
+        //- .mt-5.text-center
+        //-   button.btn.btn-primary.profile-button(type='button') Save Profile
+    //- .col-md-4
+      //- .p-3.py-5
+      //-   .d-flex.justify-content-between.align-items-center.experience
+      //-     span Edit Experience
+      //-     span.border.px-3.p-1.add-experience
+      //-       i.fa.fa-plus
+      //-       | &nbsp;Experience
+      //-   br
+      //-   .col-md-12
+      //-     label.labels Experience in Designing
+      //-     input.form-control(type='text' placeholder='experience' value='')
+      //-   br
+      //-   .col-md-12
+      //-     label.labels Additional Details
+      //-     input.form-control(type='text' placeholder='additional details' value='')
+
+script(src="/javascript/user/bioPage.js") 

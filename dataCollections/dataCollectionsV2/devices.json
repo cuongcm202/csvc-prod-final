@@ -1,0 +1,387 @@
+/* 1 */
+{
+    "_id" : ObjectId("6624aa9059b9ad2a654ba7f1"),
+    "serialNumber" : "TV000001",
+    "name" : "Tivi Sam sung",
+    "deviceType" : ObjectId("66168fd68e12ccf439f00181"),
+    "status" : "Active",
+    "initStatus" : "notUsed",
+    "imageUrl" : "/public/uploads/devices/3b0163e0-46c0-47df-83b0-5c23b93d5742.jpg",
+    "videoUrl" : "",
+    "location" : ObjectId("6612c81a84746557ec81f361"),
+    "supplier" : ObjectId("661a118b0927bc50a67dd0f1"),
+    "description" : "Thiết bị mới mua về không hư hỏng",
+    "purchaseDate" : ISODate("2024-04-21T00:00:00.000Z"),
+    "warrantyExpiry" : ISODate("2024-05-08T00:00:00.000Z"),
+    "createDate" : ISODate("2024-04-21T05:56:32.427Z"),
+    "loans" : [],
+    "logs" : [],
+    "__v" : 0
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("6624aae859b9ad2a654ba7fd"),
+    "serialNumber" : "LT000001",
+    "name" : "Laptop Asus",
+    "deviceType" : ObjectId("6612c76c84746557ec81f34d"),
+    "status" : "Active",
+    "initStatus" : "used",
+    "imageUrl" : "/public/uploads/devices/4b13c0e2-3a7c-4dd8-be18-d1792ce8d938.jpg",
+    "videoUrl" : "",
+    "location" : ObjectId("6612c81a84746557ec81f367"),
+    "supplier" : ObjectId("6612c69d84746557ec81f344"),
+    "description" : "Thiết bị mới mua về không hư hỏng",
+    "purchaseDate" : ISODate("2024-04-21T00:00:00.000Z"),
+    "warrantyExpiry" : ISODate("2024-05-03T00:00:00.000Z"),
+    "createDate" : ISODate("2024-04-21T05:58:00.782Z"),
+    "loans" : [],
+    "logs" : [],
+    "__v" : 0
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("6624ab2359b9ad2a654ba809"),
+    "serialNumber" : "LAP000002",
+    "name" : "Laptop Tuf",
+    "deviceType" : ObjectId("6612c76c84746557ec81f34d"),
+    "status" : "Active",
+    "initStatus" : "used",
+    "imageUrl" : "/public/uploads/devices/4f46519d-ef2e-4235-874e-3324a0dae70c.png",
+    "videoUrl" : "",
+    "location" : ObjectId("6612c81a84746557ec81f367"),
+    "supplier" : ObjectId("661a122a0927bc50a67dd0f8"),
+    "description" : "Thiết bị mới mua về không hư hỏng",
+    "purchaseDate" : ISODate("2024-04-21T00:00:00.000Z"),
+    "warrantyExpiry" : ISODate("2024-04-25T00:00:00.000Z"),
+    "createDate" : ISODate("2024-04-21T05:58:59.915Z"),
+    "loans" : [],
+    "logs" : [],
+    "__v" : 0
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("6624ab6459b9ad2a654ba815"),
+    "serialNumber" : "TL000001",
+    "name" : "Tablet samsung",
+    "deviceType" : ObjectId("6612c76c84746557ec81f34f"),
+    "status" : "Active",
+    "initStatus" : "used",
+    "imageUrl" : "/public/uploads/devices/661466cb-b88f-4032-8c71-82e35eaf1083.jpg",
+    "videoUrl" : "",
+    "location" : ObjectId("6612c81a84746557ec81f362"),
+    "supplier" : ObjectId("661a118b0927bc50a67dd0f1"),
+    "description" : "Thiết bị mới mua về không hư hỏng",
+    "purchaseDate" : ISODate("2024-04-11T00:00:00.000Z"),
+    "warrantyExpiry" : ISODate("2024-05-02T00:00:00.000Z"),
+    "createDate" : ISODate("2024-04-21T06:00:04.379Z"),
+    "loans" : [],
+    "logs" : [],
+    "__v" : 0
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("6624abbb59b9ad2a654ba821"),
+    "serialNumber" : "TL000002",
+    "name" : "Tablet apple",
+    "deviceType" : ObjectId("6612c76c84746557ec81f34f"),
+    "status" : "Active",
+    "initStatus" : "used",
+    "imageUrl" : "/public/uploads/devices/275464b3-9000-42fb-ba51-21dd50924797.jpg",
+    "videoUrl" : "",
+    "location" : ObjectId("6612c81a84746557ec81f369"),
+    "supplier" : ObjectId("661a122a0927bc50a67dd0f8"),
+    "description" : "Thiết bị mới mua về không hư hỏng",
+    "purchaseDate" : ISODate("2024-04-16T00:00:00.000Z"),
+    "warrantyExpiry" : ISODate("2024-04-24T00:00:00.000Z"),
+    "createDate" : ISODate("2024-04-21T06:01:31.038Z"),
+    "loans" : [],
+    "logs" : [],
+    "__v" : 0
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("6624ac1359b9ad2a654ba82d"),
+    "serialNumber" : "DS000001",
+    "name" : "Desktop Asus",
+    "deviceType" : ObjectId("6612c76c84746557ec81f350"),
+    "status" : "Active",
+    "initStatus" : "notUsed",
+    "imageUrl" : "/public/uploads/devices/b6c14df4-e745-4d6d-b312-3121eee22ee9.png",
+    "videoUrl" : "/public/uploads/devices/56c4edaa-0b77-4291-8588-4799b18c09d2.mp4",
+    "location" : ObjectId("6612c81a84746557ec81f365"),
+    "supplier" : ObjectId("661a122a0927bc50a67dd0f8"),
+    "description" : "Thiết bị mới mua về không hư hỏng",
+    "purchaseDate" : ISODate("2024-04-21T00:00:00.000Z"),
+    "warrantyExpiry" : ISODate("2024-05-01T00:00:00.000Z"),
+    "createDate" : ISODate("2024-04-21T06:02:59.987Z"),
+    "loans" : [],
+    "logs" : [],
+    "__v" : 0
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("6624acaa59b9ad2a654ba83e"),
+    "serialNumber" : "PR000001",
+    "name" : "Printer Epson EcoTank",
+    "deviceType" : ObjectId("6612c76c84746557ec81f351"),
+    "status" : "Active",
+    "initStatus" : "used",
+    "imageUrl" : "/public/uploads/devices/c2de02bf-607e-4b7e-95a0-6a803617241f.jpg",
+    "videoUrl" : "",
+    "location" : ObjectId("6612c81a84746557ec81f369"),
+    "supplier" : ObjectId("661a0611405e7cf38b896616"),
+    "description" : "Thiết bị mới mua về không hư hỏng",
+    "purchaseDate" : ISODate("2024-04-21T00:00:00.000Z"),
+    "warrantyExpiry" : ISODate("2024-05-01T00:00:00.000Z"),
+    "createDate" : ISODate("2024-04-21T06:05:30.025Z"),
+    "loans" : [],
+    "logs" : [],
+    "__v" : 0
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("6624ace359b9ad2a654ba84a"),
+    "serialNumber" : "SC000001",
+    "name" : "Scanner epson",
+    "deviceType" : ObjectId("6612c76c84746557ec81f352"),
+    "status" : "Active",
+    "initStatus" : "notUsed",
+    "imageUrl" : "/public/uploads/devices/1de5c4fd-5e59-43d1-a0ec-bf859a236af4.jpg",
+    "videoUrl" : "",
+    "location" : ObjectId("6612c81a84746557ec81f365"),
+    "supplier" : ObjectId("661a122a0927bc50a67dd0f8"),
+    "description" : "Thiết bị mới mua về không hư hỏng",
+    "purchaseDate" : ISODate("2024-04-19T00:00:00.000Z"),
+    "warrantyExpiry" : ISODate("2024-05-01T00:00:00.000Z"),
+    "createDate" : ISODate("2024-04-21T06:06:27.467Z"),
+    "loans" : [],
+    "logs" : [],
+    "__v" : 0
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("662643623e09d8c92d73c27d"),
+    "serialNumber" : "SM000001",
+    "name" : "Iphone 15 pro",
+    "deviceType" : ObjectId("6612c76c84746557ec81f34e"),
+    "status" : "Active",
+    "initStatus" : "notUsed",
+    "imageUrl" : "/public/uploads/devices/f410ed40-ba57-450e-9cf9-4046863e389d.jpg",
+    "videoUrl" : "",
+    "location" : ObjectId("6612c81a84746557ec81f362"),
+    "supplier" : ObjectId("6612c69d84746557ec81f344"),
+    "description" : "Thiết bị mới mua về không hư hỏng",
+    "price" : "2000",
+    "purchaseDate" : ISODate("2024-04-22T00:00:00.000Z"),
+    "warrantyExpiry" : ISODate("2024-05-09T00:00:00.000Z"),
+    "createDate" : ISODate("2024-04-22T11:00:50.306Z"),
+    "loans" : [],
+    "logs" : [],
+    "__v" : 0
+}
+
+/* 10 */
+{
+    "_id" : ObjectId("662643983e09d8c92d73c289"),
+    "serialNumber" : "SM000002",
+    "name" : "Realme C55",
+    "deviceType" : ObjectId("6612c76c84746557ec81f34e"),
+    "status" : "Active",
+    "initStatus" : "used",
+    "imageUrl" : "/public/uploads/devices/cde3739a-26c1-4e78-b4df-41f9e2f22a3f.jpg",
+    "videoUrl" : "",
+    "location" : ObjectId("6612c81a84746557ec81f364"),
+    "supplier" : ObjectId("6612c69d84746557ec81f344"),
+    "description" : "Thiết bị mới mua về không hư hỏng",
+    "price" : "2000",
+    "purchaseDate" : ISODate("2024-04-23T00:00:00.000Z"),
+    "warrantyExpiry" : ISODate("2024-04-30T00:00:00.000Z"),
+    "createDate" : ISODate("2024-04-22T11:01:44.868Z"),
+    "loans" : [],
+    "logs" : [],
+    "__v" : 0
+}
+
+/* 11 */
+{
+    "_id" : ObjectId("662643dc3e09d8c92d73c295"),
+    "serialNumber" : "SM000003",
+    "name" : "Oppo reno3",
+    "deviceType" : ObjectId("6612c76c84746557ec81f34e"),
+    "status" : "Active",
+    "initStatus" : "used",
+    "imageUrl" : "/public/uploads/devices/b0c36150-948f-4e09-9569-ad3b3c59c03e.jpg",
+    "videoUrl" : "",
+    "location" : ObjectId("6612c81a84746557ec81f366"),
+    "supplier" : ObjectId("6612c69d84746557ec81f344"),
+    "description" : "Thiết bị mới mua về không hư hỏng",
+    "price" : "2000",
+    "purchaseDate" : ISODate("2024-04-17T00:00:00.000Z"),
+    "warrantyExpiry" : ISODate("2024-05-01T00:00:00.000Z"),
+    "createDate" : ISODate("2024-04-22T11:02:52.004Z"),
+    "loans" : [],
+    "logs" : [],
+    "__v" : 0
+}
+
+/* 12 */
+{
+    "_id" : ObjectId("6626442b3e09d8c92d73c2a9"),
+    "serialNumber" : "SM000005",
+    "name" : "Harmony OS",
+    "deviceType" : ObjectId("6612c76c84746557ec81f34e"),
+    "status" : "Active",
+    "initStatus" : "notUsed",
+    "imageUrl" : "",
+    "videoUrl" : "",
+    "location" : ObjectId("6612c81a84746557ec81f36a"),
+    "supplier" : ObjectId("661a122a0927bc50a67dd0f8"),
+    "description" : "Thiết bị mới mua về không hư hỏng",
+    "price" : "2000",
+    "purchaseDate" : ISODate("2024-04-17T00:00:00.000Z"),
+    "warrantyExpiry" : ISODate("2024-05-08T00:00:00.000Z"),
+    "createDate" : ISODate("2024-04-22T11:04:11.592Z"),
+    "loans" : [],
+    "logs" : [],
+    "__v" : 0
+}
+
+/* 13 */
+{
+    "_id" : ObjectId("6626445a3e09d8c92d73c2b5"),
+    "serialNumber" : "SM000006",
+    "name" : "Iphone 8",
+    "deviceType" : ObjectId("6612c76c84746557ec81f34e"),
+    "status" : "Active",
+    "initStatus" : "notUsed",
+    "imageUrl" : "/public/uploads/devices/812f0e79-5b94-4e3d-bc48-73cc8e61cf23.webp",
+    "videoUrl" : "",
+    "location" : ObjectId("6612c81a84746557ec81f368"),
+    "supplier" : ObjectId("661a0611405e7cf38b896616"),
+    "description" : "Thiết bị mới mua về không hư hỏng",
+    "price" : "2000",
+    "purchaseDate" : ISODate("2024-04-17T00:00:00.000Z"),
+    "warrantyExpiry" : ISODate("2024-05-02T00:00:00.000Z"),
+    "createDate" : ISODate("2024-04-22T11:04:58.870Z"),
+    "loans" : [],
+    "logs" : [],
+    "__v" : 0
+}
+
+/* 14 */
+{
+    "_id" : ObjectId("662644953e09d8c92d73c2c1"),
+    "serialNumber" : "TV000010",
+    "name" : "Tivi LG UHD 4K 65 inch",
+    "deviceType" : ObjectId("66168fd68e12ccf439f00181"),
+    "status" : "Active",
+    "initStatus" : "notUsed",
+    "imageUrl" : "/public/uploads/devices/be1d3198-f9ee-4987-85ec-e4b385e7eeb8.jpg",
+    "videoUrl" : "",
+    "location" : ObjectId("6612c81a84746557ec81f368"),
+    "supplier" : ObjectId("661ba6198991745b7867d9b0"),
+    "description" : "Thiết bị mới mua về không hư hỏng",
+    "price" : "2000",
+    "purchaseDate" : ISODate("2024-04-09T00:00:00.000Z"),
+    "warrantyExpiry" : ISODate("2024-04-25T00:00:00.000Z"),
+    "createDate" : ISODate("2024-04-22T11:05:57.265Z"),
+    "loans" : [],
+    "logs" : [],
+    "__v" : 0
+}
+
+/* 15 */
+{
+    "_id" : ObjectId("6628e76d6496b1beaa4570ec"),
+    "serialNumber" : "RB000001",
+    "name" : "Robot Jupyter 01",
+    "deviceType" : ObjectId("6628e16b6496b1beaa457079"),
+    "status" : "Active",
+    "initStatus" : "notUsed",
+    "imageUrl" : "/public/uploads/devices/0a23766a-984f-4796-a950-6251223fa9e7.jpg",
+    "videoUrl" : "/public/uploads/devices/17f9fea0-f2cf-45bb-8b20-7127138d58c0.mp4",
+    "location" : ObjectId("6628e2f56496b1beaa45709c"),
+    "supplier" : ObjectId("6628e1ae6496b1beaa457082"),
+    "description" : "Thiết bị mới mua về không hư hỏng",
+    "price" : "2000000000",
+    "purchaseDate" : ISODate("2024-04-24T00:00:00.000Z"),
+    "warrantyExpiry" : ISODate("2024-04-25T00:00:00.000Z"),
+    "createDate" : ISODate("2024-04-24T11:05:17.748Z"),
+    "loans" : [],
+    "logs" : [],
+    "__v" : 0
+}
+
+/* 16 */
+{
+    "_id" : ObjectId("6628e90e6496b1beaa457119"),
+    "serialNumber" : "RB000002",
+    "name" : "Robot Jupyter 02",
+    "deviceType" : ObjectId("6628e16b6496b1beaa457079"),
+    "status" : "Active",
+    "initStatus" : "used",
+    "imageUrl" : "/public/uploads/devices/8e79b202-f0bd-484e-ac7d-950347261a04.jpg",
+    "videoUrl" : "/public/uploads/devices/9a4c440b-b95e-4c14-bdbd-b6ef5ac7afb8.mp4",
+    "location" : ObjectId("6628e2f56496b1beaa45709c"),
+    "supplier" : ObjectId("6628e1ae6496b1beaa457082"),
+    "description" : "Thiết bị mới mua về không hư hỏng",
+    "price" : "2000000000",
+    "purchaseDate" : ISODate("2024-04-24T00:00:00.000Z"),
+    "warrantyExpiry" : ISODate("2024-04-26T00:00:00.000Z"),
+    "createDate" : ISODate("2024-04-24T11:12:14.597Z"),
+    "loans" : [],
+    "logs" : [],
+    "__v" : 0
+}
+
+/* 17 */
+{
+    "_id" : ObjectId("662923f5e3f43c0a683f6ab4"),
+    "serialNumber" : "RB000003",
+    "name" : "Robot Jupyter 03",
+    "deviceType" : ObjectId("6628e16b6496b1beaa457079"),
+    "status" : "Active",
+    "initStatus" : "used",
+    "imageUrl" : "/public/uploads/devices/f249a75f-8294-490a-940c-9f22238ea7e6.jpg",
+    "videoUrl" : "",
+    "location" : ObjectId("6628e2f56496b1beaa45709c"),
+    "supplier" : ObjectId("6628e1ae6496b1beaa457082"),
+    "description" : "Thiết bị mới mua về không hư hỏng",
+    "price" : "100000000",
+    "purchaseDate" : ISODate("2024-04-24T00:00:00.000Z"),
+    "warrantyExpiry" : ISODate("2024-04-30T00:00:00.000Z"),
+    "createDate" : ISODate("2024-04-24T15:23:33.746Z"),
+    "loans" : [],
+    "logs" : [],
+    "__v" : 0
+}
+
+/* 18 */
+{
+    "_id" : ObjectId("66292419e3f43c0a683f6abf"),
+    "serialNumber" : "RB000004",
+    "name" : "Robot Jupyter 04",
+    "deviceType" : ObjectId("6628e16b6496b1beaa457079"),
+    "status" : "Active",
+    "initStatus" : "used",
+    "imageUrl" : "/public/uploads/devices/bcd62334-feab-404a-9389-5358c203406a.jpg",
+    "videoUrl" : "",
+    "location" : ObjectId("6628e2f56496b1beaa45709c"),
+    "supplier" : ObjectId("6628e1ae6496b1beaa457082"),
+    "description" : "Thiết bị mới mua về không hư hỏng",
+    "price" : "100000000",
+    "purchaseDate" : ISODate("2024-04-24T00:00:00.000Z"),
+    "warrantyExpiry" : ISODate("2024-04-30T00:00:00.000Z"),
+    "createDate" : ISODate("2024-04-24T15:24:09.254Z"),
+    "loans" : [],
+    "logs" : [],
+    "__v" : 0
+}

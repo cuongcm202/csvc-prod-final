@@ -1,0 +1,65 @@
+//- link(href='https://unpkg.com/jolty-ui/dist/jolty-ui.min.css' rel='stylesheet')
+//- footer
+//-   button#show-info.ui-btn.ui-btn--md.ui-btn--info Show info
+//-   button#show-success.ui-btn.ui-btn--md.ui-btn--success Show success
+//-   button#show-error.ui-btn.ui-btn--md.ui-btn--danger Show error
+//-   button#show-warning.ui-btn.ui-btn--md.ui-btn--warning Show warning
+//-   button#show-message.ui-btn.ui-btn--md.ui-btn--reverse Show message
+
+//- script(src="https://jolty-ui.com/scripts/example-controls.js") 
+//- script(type='module').
+//-   // Documentation
+//-   // https://jolty-ui.com/docs/toast
+//-   import { Toast } from "https://cdn.jsdelivr.net/npm/jolty@0.6.2/dist/jolty.esm.min.js";
+//-   // Define the structure and appearance of the toasts
+//-   Toast.template(({ content, type, dismiss, autohide }) => {
+//-   const className = `ui-toast ${type ? "ui-toast--" + type : ""}`;
+//-   const closeBtn = dismiss
+//-   ? `<button class="ui-btn-close ui-btn-close--no-bg" aria-label="Close"></button>`
+//-   : "";
+//-   const progress = autohide
+//-   ? '<div class="ui-toast-progress" data-ui-autohide-progress></div>'
+//-   : "";
+//-   return `<div class="${className}" data-ui-dismiss><div class="ui-toast-icon"></div><div class="ui-toast-content">${content}</div>${closeBtn}${progress}</div>`;
+//-   });
+//-   // Define functions for different types of toasts
+//-   const toast = {};
+//-   toast.success = (content) => new Toast({ content, type: "success" });
+//-   toast.info = (content) => new Toast({ content, type: "info" });
+//-   toast.error = (content) => new Toast({ content, type: "danger" });
+//-   toast.warning = (content) => new Toast({ content, type: "warning" });
+//-   toast.message = (content) => new Toast({ content });
+//-   // Add event listeners to the buttons that will trigger the toast
+//-   document.querySelector("#show-success").addEventListener("click", (e) => {
+//-   toast.success("This is a success message!");
+//-   });
+//-   document.querySelector("#show-info").addEventListener("click", (e) => {
+//-   toast.info("This is an info message!");
+//-   });
+//-   document.querySelector("#show-error").addEventListener("click", (e) => {
+//-   toast.error("This is an error message!");
+//-   });
+//-   document.querySelector("#show-warning").addEventListener("click", (e) => {
+//-   toast.warning("This is a warning message!");
+//-   });
+//-   document.querySelector("#show-message").addEventListener("click", (e) => {
+//-   toast.message("This is a simple message!");
+//-   });
+
+
+button#liveToastBtn.btn.btn-primary(type='button' hidden) Show live toast
+.toast-container.position-fixed.bottom-0.end-0.p-3
+  #liveToast.toast(role='alert' aria-live='assertive' aria-atomic='true')
+    .toast-header
+      svg.bd-placeholder-img.rounded.me-2(width='20' height='20' xmlns='http://www.w3.org/2000/svg' aria-hidden='true' preserveaspectratio='xMidYMid slice' focusable='false')
+        rect(width='100%' height='100%' fill='#f16022')
+      strong.me-auto Bạn có thiết bị quá hạn chưa trả!
+      //- small 11 mins ago
+      button.btn-close(type='button' data-bs-dismiss='toast' aria-label='Close')
+    .toast-body
+      svg(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 512 512' style='height: 20px; width: 20px')
+        // !Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.
+        path(d='M480 96c17.7 0 32 14.3 32 32s-14.3 32-32 32l-208 0 0-64 208 0zM320 288c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0zm64-64c0 17.7-14.3 32-32 32l-48 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l48 0c17.7 0 32 14.3 32 32zM288 384c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0zm-88-96l.6 0c-5.4 9.4-8.6 20.3-8.6 32c0 13.2 4 25.4 10.8 35.6C177.9 364.3 160 388.1 160 416c0 11.7 3.1 22.6 8.6 32l-8.6 0C71.6 448 0 376.4 0 288l0-61.7c0-42.4 16.9-83.1 46.9-113.1l11.6-11.6C82.5 77.5 115.1 64 149 64l27 0c35.3 0 64 28.7 64 64l0 88c0 22.1-17.9 40-40 40s-40-17.9-40-40l0-56c0-8.8-7.2-16-16-16s-16 7.2-16 16l0 56c0 39.8 32.2 72 72 72z')
+      a(class="ms-3" href="/device/return") Click vào đây để tới trang trả thiết bị
+
+script(src="/javascript/partials/toastFooter.js") 

@@ -1,0 +1,228 @@
+/* 1 */
+{
+    "_id" : ObjectId("662920ff2ec72631ca5e86cd"),
+    "idRecord" : 1,
+    "device" : ObjectId("6624aae859b9ad2a654ba7fd"),
+    "borrower" : ObjectId("662616d4af1ed0c40898ba62"),
+    "borrowedAt" : ISODate("2024-04-24T15:10:55.571Z"),
+    "expectedReturnDate" : ISODate("2024-04-29T00:00:00.000Z"),
+    "transactionStatus" : "Returned",
+    "__v" : 0,
+    "actualReturnDate" : ISODate("2024-04-24T15:11:32.117Z")
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("662922d6e3f43c0a683f6a3f"),
+    "idRecord" : 2,
+    "device" : ObjectId("6624ab6459b9ad2a654ba815"),
+    "borrower" : ObjectId("66267bdc3845e4ecb477f0c8"),
+    "borrowedAt" : ISODate("2024-04-24T15:18:46.412Z"),
+    "expectedReturnDate" : ISODate("2024-04-28T00:00:00.000Z"),
+    "transactionStatus" : "Returned",
+    "__v" : 0,
+    "actualReturnDate" : ISODate("2024-04-24T15:19:27.703Z")
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("662922dce3f43c0a683f6a46"),
+    "idRecord" : 3,
+    "device" : ObjectId("6624ab2359b9ad2a654ba809"),
+    "borrower" : ObjectId("66267bdc3845e4ecb477f0c8"),
+    "borrowedAt" : ISODate("2024-04-24T15:18:52.729Z"),
+    "expectedReturnDate" : ISODate("2024-04-29T00:00:00.000Z"),
+    "transactionStatus" : "Returned",
+    "__v" : 0,
+    "actualReturnDate" : ISODate("2024-04-24T15:19:45.822Z")
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("662922e9e3f43c0a683f6a50"),
+    "idRecord" : 4,
+    "device" : ObjectId("6624abbb59b9ad2a654ba821"),
+    "borrower" : ObjectId("662616d4af1ed0c40898ba62"),
+    "borrowedAt" : ISODate("2024-04-24T15:19:05.442Z"),
+    "expectedReturnDate" : ISODate("2024-04-29T00:00:00.000Z"),
+    "transactionStatus" : "Returned",
+    "__v" : 0,
+    "actualReturnDate" : ISODate("2024-04-24T15:19:58.868Z")
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("66292306e3f43c0a683f6a64"),
+    "idRecord" : 5,
+    "device" : ObjectId("6624ab6459b9ad2a654ba815"),
+    "borrower" : ObjectId("662616d4af1ed0c40898ba62"),
+    "borrowedAt" : ISODate("2024-04-24T15:19:34.497Z"),
+    "expectedReturnDate" : ISODate("2024-04-29T00:00:00.000Z"),
+    "transactionStatus" : "Returned",
+    "__v" : 0,
+    "actualReturnDate" : ISODate("2024-04-24T15:20:02.445Z")
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("66292317e3f43c0a683f6a71"),
+    "idRecord" : 6,
+    "device" : ObjectId("6624ab2359b9ad2a654ba809"),
+    "borrower" : ObjectId("662616d4af1ed0c40898ba62"),
+    "borrowedAt" : ISODate("2024-04-24T15:19:51.055Z"),
+    "expectedReturnDate" : ISODate("2024-04-28T00:00:00.000Z"),
+    "transactionStatus" : "Returned",
+    "__v" : 0,
+    "actualReturnDate" : ISODate("2024-04-24T15:20:05.697Z")
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("66292338e3f43c0a683f6aa0"),
+    "idRecord" : 7,
+    "device" : ObjectId("6624ab2359b9ad2a654ba809"),
+    "borrower" : ObjectId("66267bdc3845e4ecb477f0c8"),
+    "borrowedAt" : ISODate("2024-04-24T15:20:24.493Z"),
+    "expectedReturnDate" : ISODate("2024-04-30T00:00:00.000Z"),
+    "transactionStatus" : "Returned",
+    "__v" : 0,
+    "actualReturnDate" : ISODate("2024-04-24T15:24:46.770Z")
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("6629247de3f43c0a683f6af2"),
+    "idRecord" : 8,
+    "device" : ObjectId("66292419e3f43c0a683f6abf"),
+    "borrower" : ObjectId("66267bdc3845e4ecb477f0c8"),
+    "borrowedAt" : ISODate("2024-04-24T15:25:49.998Z"),
+    "expectedReturnDate" : ISODate("2024-04-28T00:00:00.000Z"),
+    "transactionStatus" : "Borrowed",
+    "__v" : 0
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("662924cce3f43c0a683f6b16"),
+    "idRecord" : 9,
+    "device" : ObjectId("6628e90e6496b1beaa457119"),
+    "borrower" : ObjectId("66267bdc3845e4ecb477f0c8"),
+    "borrowedAt" : ISODate("2024-04-24T15:27:08.780Z"),
+    "expectedReturnDate" : ISODate("2024-04-28T00:00:00.000Z"),
+    "transactionStatus" : "Borrowed",
+    "__v" : 0
+}
+
+/* 10 */
+{
+    "_id" : ObjectId("66293f0cb9e1dd375312b259"),
+    "idRecord" : 10,
+    "device" : ObjectId("662923f5e3f43c0a683f6ab4"),
+    "borrower" : ObjectId("662616d4af1ed0c40898ba62"),
+    "borrowedAt" : ISODate("2024-04-24T17:19:08.573Z"),
+    "expectedReturnDate" : ISODate("2024-04-30T00:00:00.000Z"),
+    "transactionStatus" : "Returned",
+    "__v" : 0,
+    "actualReturnDate" : ISODate("2024-04-24T17:19:18.092Z")
+}
+
+/* 11 */
+{
+    "_id" : ObjectId("66293f21b9e1dd375312b27a"),
+    "idRecord" : 11,
+    "device" : ObjectId("662923f5e3f43c0a683f6ab4"),
+    "borrower" : ObjectId("662616d4af1ed0c40898ba62"),
+    "borrowedAt" : ISODate("2024-04-24T17:19:29.023Z"),
+    "expectedReturnDate" : ISODate("2024-04-30T00:00:00.000Z"),
+    "transactionStatus" : "Returned",
+    "__v" : 0,
+    "actualReturnDate" : ISODate("2024-04-24T17:19:36.959Z")
+}
+
+/* 12 */
+{
+    "_id" : ObjectId("66293f34b9e1dd375312b29b"),
+    "idRecord" : 12,
+    "device" : ObjectId("662923f5e3f43c0a683f6ab4"),
+    "borrower" : ObjectId("662616d4af1ed0c40898ba62"),
+    "borrowedAt" : ISODate("2024-04-24T17:19:48.444Z"),
+    "expectedReturnDate" : ISODate("2024-04-30T00:00:00.000Z"),
+    "transactionStatus" : "Returned",
+    "__v" : 0,
+    "actualReturnDate" : ISODate("2024-04-24T17:23:24.157Z")
+}
+
+/* 13 */
+{
+    "_id" : ObjectId("662940171bddb6a895cf9448"),
+    "idRecord" : 13,
+    "device" : ObjectId("662923f5e3f43c0a683f6ab4"),
+    "borrower" : ObjectId("662616d4af1ed0c40898ba62"),
+    "borrowedAt" : ISODate("2024-04-24T17:23:35.431Z"),
+    "expectedReturnDate" : ISODate("2024-04-30T00:00:00.000Z"),
+    "transactionStatus" : "Returned",
+    "__v" : 0,
+    "actualReturnDate" : ISODate("2024-04-24T17:25:04.408Z")
+}
+
+/* 14 */
+{
+    "_id" : ObjectId("6629407c3843f49f45301b0c"),
+    "idRecord" : 14,
+    "device" : ObjectId("662923f5e3f43c0a683f6ab4"),
+    "borrower" : ObjectId("662616d4af1ed0c40898ba62"),
+    "borrowedAt" : ISODate("2024-04-24T17:25:16.083Z"),
+    "expectedReturnDate" : ISODate("2024-04-30T00:00:00.000Z"),
+    "actualReturnDate" : ISODate("2024-04-24T17:26:00.843Z"),
+    "transactionStatus" : "Returned",
+    "__v" : 0
+}
+
+/* 15 */
+{
+    "_id" : ObjectId("662940bd27cab100dc287e1c"),
+    "idRecord" : 15,
+    "device" : ObjectId("662923f5e3f43c0a683f6ab4"),
+    "borrower" : ObjectId("662616d4af1ed0c40898ba62"),
+    "borrowedAt" : ISODate("2024-04-24T17:26:21.622Z"),
+    "expectedReturnDate" : ISODate("2024-05-02T00:00:00.000Z"),
+    "transactionStatus" : "Returned",
+    "__v" : 0,
+    "actualReturnDate" : ISODate("2024-04-24T17:35:42.790Z")
+}
+
+/* 16 */
+{
+    "_id" : ObjectId("662942fa4486c23d20f26c99"),
+    "idRecord" : 16,
+    "device" : ObjectId("662643983e09d8c92d73c289"),
+    "borrower" : ObjectId("662616d4af1ed0c40898ba62"),
+    "borrowedAt" : ISODate("2024-04-24T17:35:54.201Z"),
+    "expectedReturnDate" : ISODate("2024-05-02T00:00:00.000Z"),
+    "transactionStatus" : "Borrowed",
+    "__v" : 0
+}
+
+/* 17 */
+{
+    "_id" : ObjectId("6629433de116f003c5ccf0ce"),
+    "idRecord" : 17,
+    "device" : ObjectId("6624acaa59b9ad2a654ba83e"),
+    "borrower" : ObjectId("662616d4af1ed0c40898ba62"),
+    "borrowedAt" : ISODate("2024-04-24T17:37:01.010Z"),
+    "expectedReturnDate" : ISODate("2024-04-30T00:00:00.000Z"),
+    "transactionStatus" : "Borrowed",
+    "__v" : 0
+}
+
+/* 18 */
+{
+    "_id" : ObjectId("662944658ecae6cee5f92ef2"),
+    "idRecord" : 18,
+    "device" : ObjectId("662643dc3e09d8c92d73c295"),
+    "borrower" : ObjectId("662616d4af1ed0c40898ba62"),
+    "borrowedAt" : ISODate("2024-04-24T17:41:57.841Z"),
+    "expectedReturnDate" : ISODate("2024-05-10T00:00:00.000Z"),
+    "transactionStatus" : "Borrowed",
+    "__v" : 0
+}

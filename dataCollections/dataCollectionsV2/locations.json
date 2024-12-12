@@ -1,0 +1,248 @@
+/* 1 */
+{
+    "_id" : ObjectId("6612c81a84746557ec81f361"),
+    "name" : "Headquarters",
+    "description" : "Main office location",
+    "address" : "123 Main St, City, Country"
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("6612c81a84746557ec81f362"),
+    "name" : "Branch Office 1",
+    "description" : "Secondary office location",
+    "address" : "456 Elm St, City, Country"
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("6612c81a84746557ec81f363"),
+    "name" : "Branch Office 2",
+    "description" : "Another secondary office location",
+    "address" : "789 Oak St, City, Country"
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("6612c81a84746557ec81f364"),
+    "name" : "Warehouse",
+    "description" : "Storage facility",
+    "address" : "321 Pine St, City, Country"
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("6612c81a84746557ec81f365"),
+    "name" : "Retail Store 12",
+    "description" : "First retail store location abc",
+    "address" : "654 Cedar St, City, Country"
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("6612c81a84746557ec81f366"),
+    "name" : "Retail Store 2",
+    "description" : "Second retail store location",
+    "address" : "987 Birch St, City, Country"
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("6612c81a84746557ec81f367"),
+    "name" : "Factory",
+    "description" : "Manufacturing facility",
+    "address" : "147 Maple St, City, Country"
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("6612c81a84746557ec81f368"),
+    "name" : "Data Center",
+    "description" : "Facility for housing computer systems and associated components",
+    "address" : "258 Walnut St, City, Country"
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("6612c81a84746557ec81f369"),
+    "name" : "Research Lab",
+    "description" : "Location for conducting scientific research and experiments",
+    "address" : "369 Cherry St, City, Country"
+}
+
+/* 10 */
+{
+    "_id" : ObjectId("6612c81a84746557ec81f36a"),
+    "name" : "Training Center",
+    "description" : "Facility for providing training sessions",
+    "address" : "159 Pineapple St, City, Country"
+}
+
+/* 11 */
+{
+    "_id" : ObjectId("661bcb948991745b7867d9bd"),
+    "name" : "Location 21",
+    "description" : "Description for Location 21",
+    "address" : "Address 21"
+}
+
+/* 12 */
+{
+    "_id" : ObjectId("661bcb948991745b7867d9be"),
+    "name" : "Location 22",
+    "description" : "Description for Location 22",
+    "address" : "Address 22"
+}
+
+/* 13 */
+{
+    "_id" : ObjectId("661bcb948991745b7867d9bf"),
+    "name" : "Location 23",
+    "description" : "Description for Location 23",
+    "address" : "Address 23"
+}
+
+/* 14 */
+{
+    "_id" : ObjectId("661bcb948991745b7867d9c0"),
+    "name" : "Location 24",
+    "description" : "Description for Location 24",
+    "address" : "Address 24"
+}
+
+/* 15 */
+{
+    "_id" : ObjectId("661bcb948991745b7867d9c1"),
+    "name" : "Location 25",
+    "description" : "Description for Location 25",
+    "address" : "Address 25"
+}
+
+/* 16 */
+{
+    "_id" : ObjectId("661bcb948991745b7867d9c2"),
+    "name" : "Location 26",
+    "description" : "Description for Location 26",
+    "address" : "Address 26"
+}
+
+/* 17 */
+{
+    "_id" : ObjectId("661bcb948991745b7867d9c3"),
+    "name" : "Location 27",
+    "description" : "Description for Location 27",
+    "address" : "Address 27"
+}
+
+/* 18 */
+{
+    "_id" : ObjectId("661bcb948991745b7867d9c4"),
+    "name" : "Location 28",
+    "description" : "Description for Location 28",
+    "address" : "Address 28"
+}
+
+/* 19 */
+{
+    "_id" : ObjectId("661bcb948991745b7867d9c5"),
+    "name" : "Location 29",
+    "description" : "Description for Location 29",
+    "address" : "Address 29"
+}
+
+/* 20 */
+{
+    "_id" : ObjectId("661bcb948991745b7867d9c6"),
+    "name" : "Location 30",
+    "description" : "Description for Location 30",
+    "address" : "Address 30"
+}
+
+/* 21 */
+{
+    "_id" : ObjectId("661bcb948991745b7867d9c7"),
+    "name" : "Location 31",
+    "description" : "Description for Location 31",
+    "address" : "Address 31"
+}
+
+/* 22 */
+{
+    "_id" : ObjectId("661bcb948991745b7867d9c8"),
+    "name" : "Location 32",
+    "description" : "Description for Location 32",
+    "address" : "Address 32"
+}
+
+/* 23 */
+{
+    "_id" : ObjectId("661bcb948991745b7867d9c9"),
+    "name" : "Location 33",
+    "description" : "Description for Location 33",
+    "address" : "Address 33"
+}
+
+/* 24 */
+{
+    "_id" : ObjectId("661bcb948991745b7867d9ca"),
+    "name" : "Location 34",
+    "description" : "Description for Location 34",
+    "address" : "Address 34"
+}
+
+/* 25 */
+{
+    "_id" : ObjectId("661bcb948991745b7867d9cb"),
+    "name" : "Location 35",
+    "description" : "Description for Location 35",
+    "address" : "Address 35"
+}
+
+/* 26 */
+{
+    "_id" : ObjectId("661bcb948991745b7867d9cc"),
+    "name" : "Location 36",
+    "description" : "Description for Location 36",
+    "address" : "Address 36"
+}
+
+/* 27 */
+{
+    "_id" : ObjectId("661bcb948991745b7867d9cd"),
+    "name" : "Location 37",
+    "description" : "Description for Location 37",
+    "address" : "Address 37"
+}
+
+/* 28 */
+{
+    "_id" : ObjectId("661bcb948991745b7867d9ce"),
+    "name" : "Location 404",
+    "description" : "Description for Location 38",
+    "address" : "Address 38"
+}
+
+/* 29 */
+{
+    "_id" : ObjectId("661bcb948991745b7867d9cf"),
+    "name" : "Location 39",
+    "description" : "Description for Location 39",
+    "address" : "Address 39"
+}
+
+/* 30 */
+{
+    "_id" : ObjectId("661bcb948991745b7867d9d0"),
+    "name" : "Location 40",
+    "description" : "Description for Location 40",
+    "address" : "Address 40"
+}
+
+/* 31 */
+{
+    "_id" : ObjectId("6628e2f56496b1beaa45709c"),
+    "name" : "R.IV.4",
+    "description" : "",
+    "address" : "Phòng R.IV.4 - 01 - Điện Biên Phủ - P.Vĩnh Ninh - Tp Huế - Tỉnh Thừa Thiên Huế.",
+    "__v" : 0
+}

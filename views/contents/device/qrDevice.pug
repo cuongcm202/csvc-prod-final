@@ -1,0 +1,55 @@
+include ../../main.pug
+
+section.container 
+    h2.text-center.mb-4 Quét mã thiết bị
+    .form-container
+        .mb-3
+            #qr-reader(style='max-width: 100%;')
+            #qr-reader-results
+    
+    div.wrapper-handle-qr(style='display: none')
+        h2 Mã của bạn
+        .input-group.mb-3
+            input.form-control#handle-qr-code(type='text' value='Sample QR Code')
+            .input-group-append
+                button.btn.btn-success(onclick='copyInputValue()') Copy
+
+    script.
+        function copyInputValue() {
+        // Get the input element
+        var input = document.getElementById('handle-qr-code');
+        // Select the text inside the input element
+        input.select();
+        input.setSelectionRange(0, 99999); // For mobile devices
+        // Copy the text to the clipboard
+        document.execCommand('copy');
+        // Optionally, provide feedback to the user
+        alert('Đã copy mã của bạn: ' + input.value);
+        }
+
+
+
+script(src='https://unpkg.com/html5-qrcode')
+script.
+    var resultContainer = document.getElementById("qr-reader-results");
+    var lastResult,
+        countResults = 0;
+
+    function onScanSuccess(decodedText, decodedResult) {
+        if (decodedText !== lastResult) {
+            ++countResults;
+            lastResult = decodedText;
+            alert('Đã tìm thấy đọc được mã thiết bị, vui lòng nhấn vào box tìm kiếm để lấy thông tin thiết bị!')
+            document.getElementById('html5-qrcode-button-camera-stop').click()
+            // Handle on success condition with the decoded message.
+            // console.log(`Scan result ${decodedText}`, decodedResult);
+            document.querySelector(".getDetailDevice").value = decodedText;
+            document.querySelector("#handle-qr-code").value = decodedText;
+            document.querySelector(".wrapper-handle-qr").style.display = 'block'
+        }
+    }
+    var html5QrcodeScanner = new Html5QrcodeScanner("qr-reader", {
+        fps: 10,
+        qrbox: 250,
+    });
+    html5QrcodeScanner.render(onScanSuccess);

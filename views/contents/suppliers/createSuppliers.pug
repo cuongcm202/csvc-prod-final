@@ -1,0 +1,38 @@
+include ../../main.pug
+
+.container
+  h1.mt-5 Đăng kí nhà cung cấp
+  form#supplierForm.row.g-3.needs-validation(novalidate='')
+    .col-md-6
+      label.form-label(for='name') T&ecirc;n nh&agrave; cung c&#x1EA5;p
+      .input-group.has-validation
+        input#name.form-control(type='text' name='name' placeholder='Nhập tên nhà cung cấp' required='required')
+        button#checkBtn.btn.btn-danger(type='button') Ki&#x1EC3;m tra
+        .invalid-feedback
+          | Please enter a name.
+      span#nameCheck
+      // For displaying validation result
+      #associatedFields
+      // For displaying associated supplier names
+    .col-md-6
+      label.form-label(for='address') &Dstrok;&#x1ECB;a ch&#x1EC9;
+      input#address.form-control(type='text' name='address' placeholder='Nhập địa chỉ nhà cung cấp' required='required')
+      .invalid-feedback
+        | Please enter an address.
+    .col-md-6
+      label.form-label(for='phone') S&#x1ED1; &dstrok;i&#x1EC7;n tho&#x1EA1;i
+      input#phone.form-control(type='tel' name='phone' placeholder='Nhập số điện thoại nhà cung cấp' required='required')
+      .invalid-feedback
+        | Please enter a valid phone number.
+    .col-md-6
+      label.form-label(for='email') &Dstrok;&#x1ECB;a ch&#x1EC9; email
+      input#email.form-control(type='email' name='email' placeholder='Nhập địa chỉ email của nhà cung cấp' required='required')
+      .invalid-feedback
+        | Please enter a valid email address.
+    .col-12
+      button#btn-submit.btn.btn-primary.w-100() Thêm mới
+
+script.
+  const suppliers = !{suppliers}
+script(src="/javascript/suppliers/createSuppliers.js")
+      

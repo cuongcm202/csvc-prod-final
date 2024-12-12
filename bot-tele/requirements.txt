@@ -1,0 +1,13 @@
+APScheduler==3.6.3
+cachetools==4.2.2
+certifi==2024.7.4
+pyngrok==7.1.6
+python-telegram-bot==13.7
+pytz==2024.1
+PyYAML==6.0.1
+six==1.16.0
+telegram==0.0.1
+tornado==6.4.1
+tzdata==2024.1
+tzlocal==5.2
+urllib3==1.26.15

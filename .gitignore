@@ -1,0 +1,3 @@
+node_modules/*
+ngrok.exe
+bot-tele/venv/*

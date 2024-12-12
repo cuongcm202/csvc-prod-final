@@ -1,0 +1,95 @@
+include ../../main.pug
+link(href='/css/report/reportDevice.css' rel='stylesheet')
+
+section.container
+  h2.text-center.mb-4 Danh sách thiết bị trong kho
+  .input-group.mb-3
+    input#searchInput.form-control(type='text' placeholder='Search...' aria-label='Search')
+    button#searchButton.btn.btn-outline-success(type='button') T&igrave;m ki&#x1EBF;m
+  .d-flex.mb-3
+    button.btn.badge.bg-primary(onclick="window.location.href = '/api/v1/show'") Export xlsx file
+    //- button#downloadBtn.btn.badge.bg-primary() Export xlsx file
+    button.btn.badge.bg-info.ms-3(onclick="window.location.href = '/sendemail'") Send email
+  .table-responsive
+    table.table.table-striped
+      thead
+        tr
+          th(scope='col') STT
+          th(scope='col') Tên thiết bị
+          th(scope='col') Loại thiết bị
+          th(scope='col') Tình trạng
+          th(scope='col') Trạng thái
+          th(scope='col') Vị trí
+          th(scope='col') Ngày mua
+          th(scope='col') Ngày hết hạn (dự kiến)
+          th(scope='col') Chức năng
+      tbody#deviceLoanTableBody
+        // JavaScript will populate table rows from mockdata
+  .d-flex.justify-content-between.justify-content-center.align-items-center.mt-4.mb-4
+    style.
+      @media (max-width: 768.98px) {
+        #showingInfo {
+          display: none; 
+        }
+      }
+    p#showingInfo.text-muted() Showing 0 of 0 total Users
+
+    nav(aria-label='Page navigation')
+      ul#pagination.pagination(style='margin-bottom: unset')
+    .input-group(style='width: 100px;')
+      input#pageInput.form-control(type='number' min='1' max='1' value='1')
+      button.btn.btn-primary(onclick='goToPage()') Go
+      // Data will be dynamically inserted here
+  
+
+// ===Modal===
+style.
+  /* Add your custom styles here if needed */
+  .deviceModal {
+  }
+#deviceModal.modal.deviceModal.fade(tabindex='-1')
+  .modal-dialog.modal-lg
+    .modal-content
+      .modal-header
+        h5.modal-title Thông tin thiết bị
+        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+      #modalBody.modal-body
+        // Device information will be displayed here
+        style.
+          /* Custom CSS styles */
+          /* Custom CSS styles */
+          .device-info {
+          padding: 20px;
+          }
+          .device-info img {
+          max-width: 100%;
+          height: auto;
+          }
+          .video-container {
+          margin-top: 20px;
+          position: relative;
+          }
+          #toggleButton {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 30px;
+          height: 1px;
+          background-color: #000;
+          border: none;
+          cursor: pointer;
+          }
+// Device render
+script.
+  // Mock data for device loans
+  var mockData = {
+  devices: !{formattedDevices}
+  };
+  var devicetypes = !{devicetypes}
+  var locations = !{locations}
+  var suppliers = !{suppliers}
+  const settingSizeImg = !{settingSizeImg}
+  const settingSizeVideo = !{settingSizeVideo}
+
+script(src="/javascript/report/reportDevice.js") 

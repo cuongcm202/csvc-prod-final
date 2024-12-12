@@ -1,0 +1,99 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Supplier Table
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet')
+.container
+  h1 Supplier Table
+  table.table
+    thead
+      tr
+        th #
+        th Name
+        th Address
+        th Phone
+        th Email
+    tbody#tableBody
+      // Data will be populated here
+  nav(aria-label='Page navigation')
+    ul#pagination.pagination
+      // Pagination links will be added here
+script.
+  document.addEventListener("DOMContentLoaded", function() {
+  const mockData = [
+  { name: "Supplier 1", address: "123 Main St", phone: "555-1234", email: "supplier1@example.com" },
+  { name: "Supplier 2", address: "456 Elm St", phone: "555-5678", email: "supplier2@example.com" },
+  { name: "Supplier 3", address: "789 Oak St", phone: "555-9012", email: "supplier3@example.com" },
+  { name: "Supplier 4", address: "1011 Pine St", phone: "555-3456", email: "supplier4@example.com" },
+  { name: "Supplier 5", address: "1213 Maple St", phone: "555-7890", email: "supplier5@example.com" },
+  { name: "Supplier 6", address: "1415 Cedar St", phone: "555-2345", email: "supplier6@example.com" },
+  { name: "Supplier 7", address: "1617 Birch St", phone: "555-6789", email: "supplier7@example.com" },
+  { name: "Supplier 8", address: "1819 Walnut St", phone: "555-1234", email: "supplier8@example.com" },
+  { name: "Supplier 9", address: "2021 Ash St", phone: "555-5678", email: "supplier9@example.com" },
+  { name: "Supplier 10", address: "2223 Elm St", phone: "555-9012", email: "supplier10@example.com" },
+  { name: "Supplier 11", address: "2425 Oak St", phone: "555-3456", email: "supplier11@example.com" },
+  { name: "Supplier 12", address: "2627 Pine St", phone: "555-7890", email: "supplier12@example.com" },
+  { name: "Supplier 13", address: "2829 Maple St", phone: "555-2345", email: "supplier13@example.com" },
+  { name: "Supplier 14", address: "3031 Cedar St", phone: "555-6789", email: "supplier14@example.com" },
+  { name: "Supplier 15", address: "3233 Birch St", phone: "555-1234", email: "supplier15@example.com" },
+  { name: "Supplier 16", address: "3435 Walnut St", phone: "555-5678", email: "supplier16@example.com" },
+  { name: "Supplier 17", address: "3637 Ash St", phone: "555-9012", email: "supplier17@example.com" },
+  { name: "Supplier 18", address: "3839 Elm St", phone: "555-3456", email: "supplier18@example.com" },
+  { name: "Supplier 19", address: "4041 Oak St", phone: "555-7890", email: "supplier19@example.com" },
+  { name: "Supplier 20", address: "4243 Pine St", phone: "555-2345", email: "supplier20@example.com" }
+  ];
+  const tableBody = document.getElementById("tableBody");
+  const pagination = document.getElementById("pagination");
+  const itemsPerPage = 5;
+  let currentPage = 1;
+  function renderTable(page) {
+  tableBody.innerHTML = "";
+  const startIndex = (page - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const paginatedData = mockData.slice(startIndex, endIndex);
+  paginatedData.forEach((item, index) => {
+  const row = document.createElement("tr");
+  row.innerHTML = `
+  <td>${startIndex + index + 1}</td>
+  <td>${item.name}</td>
+  <td>${item.address}</td>
+  <td>${item.phone}</td>
+  <td>${item.email}</td>
+  `;
+  tableBody.appendChild(row);
+  });
+  }
+  function renderPagination() {
+  pagination.innerHTML = "";
+  const totalPages = Math.ceil(mockData.length / itemsPerPage);
+  for (let i = 1; i <= totalPages; i++) {
+  const li = document.createElement("li");
+  li.classList.add("page-item");
+  const link = document.createElement("a");
+  link.classList.add("page-link");
+  link.href = "#";
+  link.textContent = i;
+  li.appendChild(link);
+  pagination.appendChild(li);
+  link.addEventListener("click", function() {
+  currentPage = i;
+  renderTable(currentPage);
+  highlightCurrentPage();
+  });
+  }
+  highlightCurrentPage();
+  }
+  function highlightCurrentPage() {
+  const pages = pagination.querySelectorAll(".page-item");
+  pages.forEach((page, index) => {
+  if (index + 1 === currentPage) {
+  page.classList.add("active");
+  } else {
+  page.classList.remove("active");
+  }
+  });
+  }
+  renderTable(currentPage);
+  renderPagination();
+  });

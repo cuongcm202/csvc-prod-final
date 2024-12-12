@@ -1,0 +1,25 @@
+// Sử dụng Robo3T để kết nối và thực hiện truy vấn
+db.devices.find({ status: 'Active' });
+
+// Sử dụng Robo3T để kiểm tra xem có bản ghi nào trong bảng loan có id thiết bị tương ứng không
+db.loans.find({ device: 'ID_THIET_BI', status: 'Borrowed' }).count();
+
+// Mượn thiết bị
+db.loans.insertOne({
+    device: 'ID_THIET_BI',
+    borrower: 'ID_NGUOI_DUNG',
+    borrowedAt: new Date(),
+    expectedReturnDate: new Date('2024-04-30'),
+    status: 'Borrowed'
+  });
+  
+  // Trả thiết bị
+  db.loans.updateOne(
+    { device: 'ID_THIET_BI', status: 'Borrowed' },
+    {
+      $set: {
+        actualReturnDate: new Date(),
+        status: 'Returned'
+      }
+    }
+  );

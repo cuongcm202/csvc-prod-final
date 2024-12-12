@@ -1,0 +1,76 @@
+include ../../main.pug
+
+style.
+    .product-image {
+    max-width: 100%;
+    height: auto;
+    }
+
+.container.my-5
+  .row
+    .col-md-6
+        h2 Thông tin sản phẩm 
+        // Placeholder for product image
+        div#productImage.product-image.img-fluid.mt-4(src='' alt='Product Image')
+    .col-md-6
+      h2#productName
+      table.table.mt-4
+        tbody
+            tr
+                th(scope='row') Mã thiết bị
+                td#serialNumber
+            
+            tr
+                th(scope='row') Loại thiết bị
+                td#deviceType
+            tr
+                th(scope='row') Vị trí
+                td#location
+            tr
+                th(scope='row') Nhà cung cấp
+                td#supplier
+            tr
+                th(scope='row') Giá
+                td#price
+            tr
+                th(scope='row') Ngày mua
+                td#purchaseDate
+            tr
+                th(scope='row') Ngày hết hạn
+                td#warrantyExpiry
+            tr  
+                th(scope='row') Trạng thái
+                td#statusLoan
+
+
+script.
+    // Sample data
+    const data = !{data}
+
+    const statusLoanDevice = !{statusLoanDevice}
+    
+    // Render product detail
+    document.getElementById('productName').innerText = data.name;
+    document.getElementById('serialNumber').innerText = data.serialNumber;
+    document.getElementById('deviceType').innerText = data.deviceType;
+    document.getElementById('location').innerText = data.location;
+    document.getElementById('supplier').innerText = data.supplier;
+    document.getElementById('price').innerText = data.price;
+    document.getElementById('purchaseDate').innerText = data.purchaseDate;
+    document.getElementById('warrantyExpiry').innerText = data.warrantyExpiry;
+
+    // Set product image
+    //- document.getElementById('productImage').src = data.imageUrl;
+    document.getElementById('productImage').innerHTML = `
+        <img style="width: 100%; height: 220px; object-fit: contain;" id="deviceImage" src="${data.imageUrl ? data.imageUrl : '/public/images/image_placeholder.jpg'}" alt="Proof Image">
+    `
+
+    if (statusLoanDevice == true) {
+        document.getElementById('statusLoan').innerHTML = `
+            <span class="badge bg-warning">Đã có người mượn</span>
+        `
+    } else {
+        document.getElementById('statusLoan').innerHTML = `
+            <span class="badge bg-success">Chưa có người mượn</span>
+        `
+    }

@@ -1,0 +1,29 @@
+include ../../main.pug
+
+.container.mt-5
+  h1 Th&ecirc;m v&#x1ECB; tr&iacute;
+  form#locationForm.needs-validation(novalidate='')
+    .md-3
+      label.form-label(for='name') T&ecirc;n v&#x1ECB; tr&iacute;
+      .input-group.has-validation
+        input#name.form-control(type='text' name='name' required='')
+        button#checkBtn.btn.btn-success(type='button') Ki&#x1EC3;m tra
+        .invalid-feedback
+          | Please enter a name.
+      span#nameCheck
+      // For displaying validation result
+      #associatedFields
+      // For displaying associated supplier names
+    .md-3
+      label.form-label(for='description') M&ocirc; t&#x1EA3;
+      textarea#description.form-control(name='description' rows='3' required='')
+    .md-3
+      label.form-label(for='address') &Dstrok;&#x1ECB;a ch&#x1EC9;
+      input#address.form-control(type='text' name='address' required='')
+      .invalid-feedback Please enter an address.
+    .col-12
+      button.w-100.mt-3.btn.btn-primary() T&#x1EA1;o m&#x1EDB;i
+
+script.
+  const locations = !{locations}
+script(src="/javascript/locations/createlocations.js")

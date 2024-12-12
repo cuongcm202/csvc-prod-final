@@ -1,0 +1,73 @@
+include ../../main.pug
+
+.container.mt-5
+  h2 Bảng thông tin nhà cung cấp
+  .form-group.search-box
+    .input-group
+      input#searchInput.form-control(type='text' placeholder='Search...' aria-label='Search')
+      button#searchButton.btn.btn-outline-success(type='button') Tìm kiếm
+
+  .form-check.form-switch
+    .mt-3
+      input#flexSwitchCheckDefault.switchRetrieveAllData.form-check-input(type='checkbox' role='switch')
+      label.form-check-label(for='flexSwitchCheckDefault') Hiển thị tất cả
+  .table-responsive
+    table.table.table-striped
+      thead
+        tr
+          th STT
+          th Tên
+          th Địa chỉ
+          th Số điện thoại
+          th Địa chỉ email
+          th Chức năng
+          // New column for actions
+      tbody#supplierTableBody
+        .warrper.text-center
+          #spinner.spinner-border.text-primary(role='status')
+            span.visually-hidden Loading...
+  
+  .d-flex.justify-content-between.justify-content-center.align-items-center.mt-4.mb-4
+    style.
+      @media (max-width: 768.98px) {
+        #showingInfo {
+          display: none; 
+        }
+      }
+    p#showingInfo.text-muted() Showing 0 of 0 total Users
+
+    nav(aria-label='Page navigation')
+      ul#pagination.pagination(style='margin-bottom: unset')
+    .input-group(style='width: 100px;')
+      input#pageInput.form-control(type='number' min='1' max='1' value='1')
+      button.btn.btn-primary(onclick='goToPage()') Go
+      // Data will be dynamically inserted here
+
+// Modal for displaying supplier details
+#supplierModal.modal.fade(tabindex='-1' aria-labelledby='supplierModalLabel' aria-hidden='true')
+  .modal-dialog.modal-dialog-centered
+    .modal-content
+      .modal-header
+        h5#supplierModalLabel.modal-title Update Supplier
+        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+      .modal-body
+        form#updateSupplierForm(method='post' action='/suppliers/update')
+          input#name-holder.form-control(type='text' name='nameholder' hidden readonly="")
+          .mb-3
+            label.form-label(for='name') Tên
+            input#name.form-control(type='text' name='name' required="")
+          .mb-3
+            label.form-label(for='address') Địa chỉ
+            input#address.form-control(type='text' name='address' required="")
+          .mb-3
+            label.form-label(for='phone') Số điện thoại
+            input#phone.form-control(type='text' name='phone' required="")
+          .mb-3
+            label.form-label(for='email') Địa chỉ email
+            input#email.form-control(type='email' name='email' required="")
+          button.w-100.btn.btn-primary(type='submit') Sửa
+
+script.
+  var mockData = !{suppliers};
+
+script(src="/javascript/suppliers/detailSuppliers.js")

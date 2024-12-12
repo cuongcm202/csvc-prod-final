@@ -1,0 +1,125 @@
+db.getCollection('suppliers').insertMany(
+    [
+      {
+        "name": "Supplier 21",
+        "address": "Address 21",
+        "phone": "1234567893",
+        "email": "supplier21@example.com"
+      },
+      {
+        "name": "Supplier 22",
+        "address": "Address 22",
+        "phone": "1234567894",
+        "email": "supplier22@example.com"
+      },
+      {
+        "name": "Supplier 23",
+        "address": "Address 23",
+        "phone": "1234567895",
+        "email": "supplier23@example.com"
+      },
+      {
+        "name": "Supplier 24",
+        "address": "Address 24",
+        "phone": "1234567896",
+        "email": "supplier24@example.com"
+      },
+      {
+        "name": "Supplier 25",
+        "address": "Address 25",
+        "phone": "1234567897",
+        "email": "supplier25@example.com"
+      },
+      {
+        "name": "Supplier 26",
+        "address": "Address 26",
+        "phone": "1234567898",
+        "email": "supplier26@example.com"
+      },
+      {
+        "name": "Supplier 27",
+        "address": "Address 27",
+        "phone": "1234567899",
+        "email": "supplier27@example.com"
+      },
+      {
+        "name": "Supplier 28",
+        "address": "Address 28",
+        "phone": "1234567800",
+        "email": "supplier28@example.com"
+      },
+      {
+        "name": "Supplier 29",
+        "address": "Address 29",
+        "phone": "1234567801",
+        "email": "supplier29@example.com"
+      },
+      {
+        "name": "Supplier 30",
+        "address": "Address 30",
+        "phone": "1234567802",
+        "email": "supplier30@example.com"
+      },
+      {
+        "name": "Supplier 31",
+        "address": "Address 31",
+        "phone": "1234567803",
+        "email": "supplier31@example.com"
+      },
+      {
+        "name": "Supplier 32",
+        "address": "Address 32",
+        "phone": "1234567804",
+        "email": "supplier32@example.com"
+      },
+      {
+        "name": "Supplier 33",
+        "address": "Address 33",
+        "phone": "1234567805",
+        "email": "supplier33@example.com"
+      },
+      {
+        "name": "Supplier 34",
+        "address": "Address 34",
+        "phone": "1234567806",
+        "email": "supplier34@example.com"
+      },
+      {
+        "name": "Supplier 35",
+        "address": "Address 35",
+        "phone": "1234567807",
+        "email": "supplier35@example.com"
+      },
+      {
+        "name": "Supplier 36",
+        "address": "Address 36",
+        "phone": "1234567808",
+        "email": "supplier36@example.com"
+      },
+      {
+        "name": "Supplier 37",
+        "address": "Address 37",
+        "phone": "1234567809",
+        "email": "supplier37@example.com"
+      },
+      {
+        "name": "Supplier 38",
+        "address": "Address 38",
+        "phone": "1234567810",
+        "email": "supplier38@example.com"
+      },
+      {
+        "name": "Supplier 39",
+        "address": "Address 39",
+        "phone": "1234567811",
+        "email": "supplier39@example.com"
+      },
+      {
+        "name": "Supplier 40",
+        "address": "Address 40",
+        "phone": "1234567812",
+        "email": "supplier40@example.com"
+      }
+    
+]
+)

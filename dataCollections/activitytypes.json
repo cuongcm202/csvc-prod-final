@@ -1,0 +1,45 @@
+db.getCollection('activitytypes').insertMany(
+    [
+  {
+    "name": "Meeting",
+    "description": "An organized gathering of people to discuss or engage in a specific topic or purpose."
+  },
+  {
+    "name": "Training",
+    "description": "A program of learning activities designed to improve skills or knowledge in a particular subject or area."
+  },
+  {
+    "name": "Presentation",
+    "description": "The act of showing or explaining something to an audience, typically with visual aids."
+  },
+  {
+    "name": "Conference",
+    "description": "A large meeting or gathering, typically lasting several days, where participants discuss various topics or issues."
+  },
+  {
+    "name": "Workshop",
+    "description": "A session in which a group of people engage in intensive discussion and activity on a particular subject or project."
+  },
+  {
+    "name": "Seminar",
+    "description": "A small group meeting for intensive study or discussion, typically led by an expert in the field."
+  },
+  {
+    "name": "Webinar",
+    "description": "A seminar conducted over the internet, typically using video conferencing software."
+  },
+  {
+    "name": "Team Building",
+    "description": "Activities designed to enhance the relationships and effectiveness of a group of people working together as a team."
+  },
+  {
+    "name": "Brainstorming",
+    "description": "A group problem-solving technique that involves generating a large number of ideas or solutions to a problem."
+  },
+  {
+    "name": "Networking",
+    "description": "The process of making connections and building relationships, typically for professional or social purposes."
+  }
+]
+
+)

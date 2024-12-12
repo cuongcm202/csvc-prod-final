@@ -1,0 +1,116 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title User Management
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet')
+  style.
+    /* Custom CSS for sticky sidebar */
+    html,
+    body {
+    height: 100%;
+    }
+    .sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    }
+    .nav-group .nav-link:hover {
+    background: #FFC96F;
+    }
+    .rotate-on-hover {
+      transition: transform 1s ease-in-out;
+    }
+    .btn-setting:hover .rotate-on-hover {
+      transform: rotate(90deg);
+    }
+
+span.btn-setting.mt-2.btn(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasExample' aria-controls='offcanvasExample') 
+  svg.bi.bi-gear.rotate-on-hover(xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='blue' viewbox='0 0 16 16')
+    path(d='M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0')
+    path(d='M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z')
+  
+#offcanvasExample.offcanvas.offcanvas-start(tabindex='-1' aria-labelledby='offcanvasExampleLabel')
+  .offcanvas-header.text-white(style='background: #FF7D29')
+    h5#offcanvasExampleLabel.offcanvas-title
+      | Chức năng
+    button.btn-close.text-reset(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
+  .offcanvas-body.text-dark(style='background: #FF7D29')
+    ul.nav.nav-pills.flex-column.mb-auto.nav-group
+      li.nav-item
+        a.nav-link.text-white(href='/' aria-current='page') Home
+        a.nav-link.text-white(href='/user/manage' aria-current='page') Quản lý người dùng
+        a.nav-link.text-white(href='/user/config' aria-current='page') Cài đặt thiết lập trang
+      //- li.nav-item
+      //-   a.nav-link.text-white(href='/dashboard' aria-current='page') Dashboard
+      //- li.nav-item
+      //-   a.nav-link.text-white(href='#') Permissions &amp; Accounts
+.container-fluid
+  .row.flex-nowrap
+    main.col-md-12.col-sm-12.px-4
+      .d-flex.justify-content-between.align-items-center.mt-4
+        h1.h1.titlePage Quản trị viên trang
+      .input-group.mt-3
+        input#searchInput.form-control(type='text' placeholder='Search...')
+        button#searchButton.btn.btn-outline-success(type='button') Tìm kiếm
+      .table-responsive.mt-4
+        table.table.table-hover.table-responsive
+          thead
+            tr
+              th(scope='col') Tên người dùng
+              th(scope='col') Vai trò
+              th(scope='col') Chức năng
+          tbody#user-table
+      .d-flex.justify-content-between.align-items-center.mt-4
+        style.
+          @media (max-width: 768.98px) {
+            #showingInfo {
+              display: none; 
+            }
+          }
+        p#showingInfo.text-muted() Showing 0 of 0 total Users
+        nav(aria-label='Page navigation')
+          ul#pagination.pagination
+        .input-group(style='width: 100px;')
+          input#pageInput.form-control(type='number' min='1' max='1' value='1')
+          button.btn.btn-primary(onclick='goToPage()') Go
+// Edit User Modal
+#editUserModal.modal.fade(tabindex='-1' aria-labelledby='editUserModalLabel' aria-hidden='true')
+  .modal-dialog
+    .modal-content
+      .modal-header
+        h5#editUserModalLabel.modal-title
+          | Edit User Information
+        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+      .modal-body
+        // Edit user form will be inserted here
+        form#editUserForm()
+          .mb-3
+            label.form-label(for='editUsername') Username
+            input#editUsername.form-control(type='text' name='username' readonly='')
+          .mb-3
+            label.form-label(for='editUserFullName') Fullname
+            input#editUserFullName.form-control(type='text' name='fullname')
+          .mb-3
+            label.form-label(for='editEmail') Email
+            input#editEmail.form-control(type='email' name='email')
+          .mb-3
+            label.form-label(for='editPassword') Password
+            input#editPassword.form-control(type='text' name='password')
+          .mb-3
+            label.form-label(for='editPhone') Phone
+            input#editPhone.form-control(type='text' name='phone')
+          .mb-3
+            div#wrapperEditRole
+          button#btnSubmit.w-100.btn.btn-primary(type='submit')
+            | Lưu thay đổi
+script(src='https://code.jquery.com/jquery-3.6.0.min.js')
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js')
+
+script.
+  var mockData = !{data}
+
+script(src="/javascript/admin/manageUser.js") 

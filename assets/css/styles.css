@@ -1,0 +1,21 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+*::selection {
+    background-color: #5D3BEE50;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "DM Sans", sans-serif;
+
+    overflow-x: hidden;
+}

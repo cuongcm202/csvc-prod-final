@@ -1,0 +1,19 @@
+include ../../main.pug
+link(href='/css/user/loginForm.css' rel='stylesheet')
+script(src="/javascript/user/loginForm.js") 
+
+.container.content
+    .wrapper
+        h2.mb-4.mt-4 &Dstrok;&abreve;ng Nh&#x1EAD;p
+        div#loginForm(method='post')
+            .mb-3
+            label.form-label(for='email') Địa chỉ Email:
+            input#email.form-control(autocomplete='off', type='text', name='email', required='' value="")
+            .mb-3
+            label.form-label(for='password') M&#x1EAD;t kh&#x1EA9;u:
+            input#password.form-control(type='password', name='password', required='', value="")
+            button.btn.btn-primary(onclick='handleLogin(event)' style='width: 100%; margin-top: 20px;') &Dstrok;&abreve;ng Nh&#x1EAD;p
+            .text-center(style='margin-top: 50px; border: 1px solid #ccc; border-radius: 8px;')
+                a.btn(href='./register') Chưa có tài khoản, nhấn vào đây để đăng ký
+
+

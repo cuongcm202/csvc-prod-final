@@ -1,0 +1,35 @@
+include ../../main.pug
+link(href='/css/user/registerForm.css' rel='stylesheet')
+script(src="/javascript/user/registerForm.js") 
+
+.container
+  .content
+    .wrapper
+      h2.mb-4.mt-4 &Dstrok;&abreve;ng K&yacute;
+      form#registerForm(action='./register' method='post' enctype='application/json')
+        .mb-3
+          label.form-label(for='fullname' required='true') Tên đầy đủ
+          input#fullname.form-control(type='text' name='fullname' required='' value='' placeholder="Nhập tên đầy đủ")
+        .mb-3
+          label.form-label(for='username') T&ecirc;n &dstrok;&abreve;ng nh&#x1EAD;p:
+          input#username.form-control(type='text' name='username' required='' value='' placeholder="Nhập tên người dùng trong hệ thống")
+        .mb-3
+          label.form-label(for='password') M&#x1EAD;t kh&#x1EA9;u:
+          input#password.form-control(type='password' name='password' required='' value='' placeholder="Nhập mật khẩu")
+        .mb-3
+          label.form-label(for='email') Email:
+          input#email.form-control(type='email' name='email' required='' value='' placeholder="Nhập địa chỉ email")
+        .mb-3
+          label.form-label(for='phone') S&#x1ED1; &dstrok;i&#x1EC7;n tho&#x1EA1;i:
+          input#phone.form-control(type='tel' name='phone' pattern='[0-9]{10}' required='' value='' placeholder="Nhập số điện thoại")
+          small.text-muted
+            | Vui l&ograve;ng nh&#x1EAD;p s&#x1ED1; &dstrok;i&#x1EC7;n tho&#x1EA1;i g&#x1ED3;m 10 ch&#x1EEF;
+            | s&#x1ED1;.
+        button.btn.btn-primary(type='submit' style='width: 100%')
+          | &Dstrok;&abreve;ng K&yacute;
+        .text-center(style='\
+        margin-top: 50px;\
+        border: 1px solid #ccc;\
+        border-radius: 8px;\
+        ')
+          a.btn(href='./login') Quay trở lại trang đăng nhập

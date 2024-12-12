@@ -1,0 +1,96 @@
+style.
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+    .sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #333;
+    padding-top: 20px;
+    transition: left 0.3s ease;
+    }
+    .sidebar.active {
+    left: 0;
+    }
+    .sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    }
+    .sidebar a:hover {
+    background-color: #555;
+    }
+    .content {
+    margin-left: 0;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+    }
+    .table-container {
+    width: calc(100% - 20px);
+    }
+    .table {
+    width: 100%;
+    border-collapse: collapse;
+    }
+    .table th, .table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    }
+    .table th {
+    background-color: #f2f2f2;
+    }
+    .toggle-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+    }
+    @media screen and (max-width: 600px) {
+    .sidebar {
+    left: -250px;
+    }
+    .sidebar.active {
+    left: 0;
+    }
+    }
+    li.nav-item {
+    list-style-type: none;
+    }
+    #toggleIcon {
+        margin-top: 50px;
+    }
+
+
+
+#toggleIcon.toggle-icon &#x2630;
+#sidebar.sidebar
+    li.nav-item
+    each route, nameRoute in routes
+            li.nav-item
+                a.nav-link(href=route, title=nameRoute.charAt(0).toUpperCase() + nameRoute.slice(1))= nameRoute.charAt(0).toUpperCase() + nameRoute.slice(1)
+            
+    
+
+script.
+    document.addEventListener("DOMContentLoaded", function() {
+    const toggleIcon = document.getElementById("toggleIcon");
+    const sidebar = document.getElementById("sidebar");
+    const content = document.getElementById("content");
+    toggleIcon.addEventListener("click", function() {
+    sidebar.classList.toggle("active");
+    if (sidebar.classList.contains("active")) {
+    content.style.marginLeft = "250px";
+    } else {
+    content.style.marginLeft = "0";
+    }
+    });
+    });

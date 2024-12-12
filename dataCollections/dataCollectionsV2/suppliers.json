@@ -1,0 +1,390 @@
+/* 1 */
+{
+    "_id" : ObjectId("6612c69d84746557ec81f343"),
+    "name" : "Supplier 1",
+    "address" : "123 Main St, City, Country",
+    "phone" : "123-456-7890",
+    "email" : "supplier1@example.com"
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("6612c69d84746557ec81f344"),
+    "name" : "Phong Vũ PC",
+    "address" : "456 Elm St, City, Country",
+    "phone" : "0335538655",
+    "email" : "phongvu@gmail.com"
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("6612c69d84746557ec81f345"),
+    "name" : "Supplier 3",
+    "address" : "789 Oak St, City, Country",
+    "phone" : "789-012-3456",
+    "email" : "supplier3@example.com"
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("6612c69d84746557ec81f346"),
+    "name" : "Supplier 4",
+    "address" : "321 Pine St, City, Country",
+    "phone" : "321-654-9870",
+    "email" : "supplier4@example.com"
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("6612c69d84746557ec81f347"),
+    "name" : "Supplier 5",
+    "address" : "654 Cedar St, City, Country",
+    "phone" : "654-987-0123",
+    "email" : "supplier5@example.com"
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("6612c69d84746557ec81f348"),
+    "name" : "Supplier 66",
+    "address" : "987 Birch St, City, Country",
+    "phone" : "987-210-5436",
+    "email" : "supplier6@example.com"
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("6612c69d84746557ec81f34a"),
+    "name" : "Supplier 8",
+    "address" : "258 Walnut St, City, Country",
+    "phone" : "258-369-4812",
+    "email" : "supplier8@example.com"
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("6612c69d84746557ec81f34b"),
+    "name" : "Supplier 9",
+    "address" : "369 Cherry St, City, Country",
+    "phone" : "369-481-6023",
+    "email" : "supplier9@example.com"
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("6612c69d84746557ec81f34c"),
+    "name" : "XYZ",
+    "address" : "159 Pineapple St, City, Country",
+    "phone" : "159-357-4802",
+    "email" : "supplier10@example.com"
+}
+
+/* 10 */
+{
+    "_id" : ObjectId("661a0611405e7cf38b896616"),
+    "name" : "ABC suppliers",
+    "address" : "street 56",
+    "phone" : "1233123124",
+    "email" : "abc@gmail.com.vn",
+    "__v" : 0
+}
+
+/* 11 */
+{
+    "_id" : ObjectId("661a118b0927bc50a67dd0f1"),
+    "name" : "Samsungvbv",
+    "address" : "159 Pineapple St, City,Country SAfthhyh",
+    "phone" : "1593574802999",
+    "email" : "samsung@gmail.com",
+    "__v" : 0
+}
+
+/* 12 */
+{
+    "_id" : ObjectId("661a122a0927bc50a67dd0f8"),
+    "name" : "Phi Long PC",
+    "address" : "160 Hùng Vương Huế",
+    "phone" : "0356758213",
+    "email" : "philong160@gmail.com",
+    "__v" : 0
+}
+
+/* 13 */
+{
+    "_id" : ObjectId("661ba506ef1262a056d40eb0"),
+    "name" : "SupplierABC",
+    "address" : "159 Pineapple St, City",
+    "phone" : "2149000021",
+    "email" : "supplierabc@gmail.com",
+    "__v" : 0
+}
+
+/* 14 */
+{
+    "_id" : ObjectId("661ba6198991745b7867d9a9"),
+    "name" : "Supplier 21",
+    "address" : "Address 21",
+    "phone" : "1234567893",
+    "email" : "supplier21@example.com"
+}
+
+/* 15 */
+{
+    "_id" : ObjectId("661ba6198991745b7867d9aa"),
+    "name" : "Supplier 22",
+    "address" : "Address 22",
+    "phone" : "1234567894",
+    "email" : "supplier22@example.com"
+}
+
+/* 16 */
+{
+    "_id" : ObjectId("661ba6198991745b7867d9ab"),
+    "name" : "Supplier 23",
+    "address" : "Address 23",
+    "phone" : "1234567895",
+    "email" : "supplier23@example.com"
+}
+
+/* 17 */
+{
+    "_id" : ObjectId("661ba6198991745b7867d9ac"),
+    "name" : "Supplier 24",
+    "address" : "Address 24",
+    "phone" : "1234567896",
+    "email" : "supplier24@example.com"
+}
+
+/* 18 */
+{
+    "_id" : ObjectId("661ba6198991745b7867d9ad"),
+    "name" : "Supplier 25",
+    "address" : "Address 25",
+    "phone" : "1234567897",
+    "email" : "supplier25@example.com"
+}
+
+/* 19 */
+{
+    "_id" : ObjectId("661ba6198991745b7867d9ae"),
+    "name" : "Supplier 26",
+    "address" : "Address 26",
+    "phone" : "1234567898",
+    "email" : "supplier26@example.com"
+}
+
+/* 20 */
+{
+    "_id" : ObjectId("661ba6198991745b7867d9af"),
+    "name" : "Supplier 27",
+    "address" : "Address 27",
+    "phone" : "1234567899",
+    "email" : "supplier27@example.com"
+}
+
+/* 21 */
+{
+    "_id" : ObjectId("661ba6198991745b7867d9b0"),
+    "name" : "Supplier 28",
+    "address" : "Address 28",
+    "phone" : "1234567800",
+    "email" : "supplier28@example.com"
+}
+
+/* 22 */
+{
+    "_id" : ObjectId("661ba6198991745b7867d9b1"),
+    "name" : "Supplier 29",
+    "address" : "Address 29",
+    "phone" : "1234567801",
+    "email" : "supplier29@example.com"
+}
+
+/* 23 */
+{
+    "_id" : ObjectId("661ba6198991745b7867d9b2"),
+    "name" : "Supplier 30",
+    "address" : "Address 30",
+    "phone" : "1234567802",
+    "email" : "supplier30@example.com"
+}
+
+/* 24 */
+{
+    "_id" : ObjectId("661ba6198991745b7867d9b3"),
+    "name" : "Supplier 31",
+    "address" : "Address 31",
+    "phone" : "1234567803",
+    "email" : "supplier31@example.com"
+}
+
+/* 25 */
+{
+    "_id" : ObjectId("661ba6198991745b7867d9b4"),
+    "name" : "Supplier 32",
+    "address" : "Address 32",
+    "phone" : "1234567804",
+    "email" : "supplier32@example.com"
+}
+
+/* 26 */
+{
+    "_id" : ObjectId("661ba6198991745b7867d9b5"),
+    "name" : "Supplier 33",
+    "address" : "Address 33",
+    "phone" : "1234567805",
+    "email" : "supplier33@example.com"
+}
+
+/* 27 */
+{
+    "_id" : ObjectId("661ba6198991745b7867d9b6"),
+    "name" : "Supplier 34",
+    "address" : "Address 34",
+    "phone" : "1234567806",
+    "email" : "supplier34@example.com"
+}
+
+/* 28 */
+{
+    "_id" : ObjectId("661ba6198991745b7867d9b7"),
+    "name" : "Supplier 35",
+    "address" : "Address 35",
+    "phone" : "1234567807",
+    "email" : "supplier35@example.com"
+}
+
+/* 29 */
+{
+    "_id" : ObjectId("661ba6198991745b7867d9b8"),
+    "name" : "Supplier 36",
+    "address" : "Address 36",
+    "phone" : "1234567808",
+    "email" : "supplier36@example.com"
+}
+
+/* 30 */
+{
+    "_id" : ObjectId("661ba6198991745b7867d9b9"),
+    "name" : "Supplier 37",
+    "address" : "Address 37",
+    "phone" : "1234567809",
+    "email" : "supplier37@example.com"
+}
+
+/* 31 */
+{
+    "_id" : ObjectId("661ba6198991745b7867d9ba"),
+    "name" : "Supplier 38",
+    "address" : "Address 38",
+    "phone" : "1234567810",
+    "email" : "supplier38@example.com"
+}
+
+/* 32 */
+{
+    "_id" : ObjectId("661ba6198991745b7867d9bb"),
+    "name" : "Supplier 39",
+    "address" : "Address 39",
+    "phone" : "1234567811",
+    "email" : "supplier39@example.com"
+}
+
+/* 33 */
+{
+    "_id" : ObjectId("661ba6198991745b7867d9bc"),
+    "name" : "Supplier 40",
+    "address" : "Address 40",
+    "phone" : "1234567812",
+    "email" : "supplier40@example.com"
+}
+
+/* 34 */
+{
+    "_id" : ObjectId("66254bfba3b39af04a1a9c01"),
+    "name" : "Supplier 2",
+    "address" : "159 Pineapple St, City, Country",
+    "phone" : "0335538655",
+    "email" : "supplier2@gmail.com.vn",
+    "__v" : 0
+}
+
+/* 35 */
+{
+    "_id" : ObjectId("66254dafdf043d4262eab0b7"),
+    "name" : "Supplier232",
+    "address" : "160 Pineapple St, City",
+    "phone" : "0335538655",
+    "email" : "supplier232@example.com",
+    "__v" : 0
+}
+
+/* 36 */
+{
+    "_id" : ObjectId("66254e51b9d9e0c0c98695f9"),
+    "name" : "ABC supplierss",
+    "address" : "456 Elm St, City, Country",
+    "phone" : "0335538655",
+    "email" : "abc@gmail.com",
+    "__v" : 0
+}
+
+/* 37 */
+{
+    "_id" : ObjectId("66254ea4b9be7ae96060c047"),
+    "name" : "ABC suppliersabc",
+    "address" : "Supplier abc",
+    "phone" : "0335538655",
+    "email" : "supplier10@example.com",
+    "__v" : 0
+}
+
+/* 38 */
+{
+    "_id" : ObjectId("66256364bcca44b2b57d3031"),
+    "name" : "Xiaomi",
+    "address" : "456 Elm St, City, Country",
+    "phone" : "0335538655",
+    "email" : "xiaomi@example.com",
+    "__v" : 0
+}
+
+/* 39 */
+{
+    "_id" : ObjectId("66266f8a5e46d34d8089032f"),
+    "name" : "ABC supplier321",
+    "address" : "DC abscbasc",
+    "phone" : "0335538651",
+    "email" : "Ksyuu98@gmail.com",
+    "__v" : 0
+}
+
+/* 40 */
+{
+    "_id" : ObjectId("662670c45e46d34d8089033d"),
+    "name" : "ABC",
+    "address" : "Hùng Vương Huế",
+    "phone" : "0886313134",
+    "email" : "abc@gmail.com",
+    "__v" : 0
+}
+
+/* 41 */
+{
+    "_id" : ObjectId("6628e1ae6496b1beaa457082"),
+    "name" : "INVIDIA",
+    "address" : "New York - American",
+    "phone" : "0102030405",
+    "email" : "nvdia@gmail.com",
+    "__v" : 0
+}
+
+/* 42 */
+{
+    "_id" : ObjectId("662936d1e8791bff62b4d3e7"),
+    "name" : "Mĩao",
+    "address" : "159 Pineapple St, City, Country",
+    "phone" : "0335538655",
+    "email" : "miaox@gmail.com.vn",
+    "__v" : 0
+}

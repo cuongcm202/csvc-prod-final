@@ -1,0 +1,5 @@
+input.is-invalid {
+    border-color: #dc3545 !important;
+    transition: border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out;
+}

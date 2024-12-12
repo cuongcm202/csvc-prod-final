@@ -1,0 +1,407 @@
+// Data to insert
+const userData = [
+{
+
+    "username" : "john_doe",
+    "password" : "password123",
+    "email" : "john@example.com",
+    "phone" : "123-456-7890",
+    "role" : "guest",
+    "createdAt" : new Date(),
+},
+
+{
+
+    "username" : "jane_smith",
+    "password" : "password456",
+    "email" : "jane@example.com",
+    "phone" : "987-654-3210",
+    "role" : "guest",
+    "createdAt" : new Date(),
+},
+
+{
+
+    "username" : "mike_jackson",
+    "password" : "password789",
+    "email" : "mike@example.com",
+    "phone" : "555-555-5555",
+    "role" : "user",
+    "createdAt" : new Date(),
+},
+
+{
+
+    "username" : "sara_williams",
+    "password" : "passwordabc",
+    "email" : "sara@example.com",
+    "phone" : "111-222-3333",
+    "role" : "moderator",
+    "createdAt" : new Date(),
+},
+
+{
+
+    "username" : "user_user",
+    "password" : "userpassword",
+    "email" : "user@example.com",
+    "phone" : "999-888-7777",
+    "role" : "guest",
+    "createdAt" : new Date(),
+},
+
+{
+
+    "username" : "huydapchai",
+    "password" : "12345",
+    "email" : "huydapchai@gmail.com",
+    "phone" : "0362313134",
+    "role" : "guest",
+    "createdAt" : new Date(),
+    "__v" : 0,
+    "fullname" : "Trần Đức Bo lbblb"
+},
+
+{
+
+    "username" : "nam",
+    "password" : "nam",
+    "email" : "nam@gmail.com",
+    "phone" : "0344911862",
+    "role" : "admin",
+    "createdAt" : new Date(),
+    "__v" : 0,
+    "fullname" : "Nguyễn Danh Nam"
+},
+
+{
+
+    "username" : "trang",
+    "fullname" : "Nguyễn Thị Thùy Trang lang thang",
+    "password" : "12345",
+    "email" : "trang@gmail.com",
+    "phone" : "0961313134",
+    "role" : "moderator",
+    "createdAt" : new Date(),
+    "__v" : 0
+},
+
+{
+
+    "username" : "vietdell255",
+    "fullname" : "Hoàng Trọng Việt",
+    "password" : "viettretrau",
+    "email" : "vietdell255@gmail.com",
+    "phone" : "0865156687",
+    "role" : "moderator",
+    "createdAt" : new Date(),
+    "__v" : 0
+},
+
+{
+
+    "username" : "hoacute",
+    "fullname" : "Nguyễn Thị Hòa",
+    "password" : "12345",
+    "email" : "hoacute1234@gmail.com",
+    "phone" : "0335538651",
+    "role" : "moderator",
+    "createdAt" : new Date(),
+    "__v" : 0
+},
+
+{
+
+    "username" : "lichnguyen",
+    "fullname" : "Nguyễn Quang Lịch",
+    "password" : "12345",
+    "email" : "lichnguyen@hueuni.edu.vn",
+    "phone" : "0335538651",
+    "role" : "admin",
+    "createdAt" : new Date(),
+    "__v" : 0
+},
+
+{
+
+    "username" : "nguyenvana",
+    "fullname" : "Nguyễn Văn A",
+    "password" : "12345",
+    "email" : "nguyenvana@gmail.com",
+    "phone" : "0345239655",
+    "role" : "moderator",
+    "createdAt" : new Date(),
+    "__v" : 0
+},
+
+{
+
+    "username" : "demo",
+    "fullname" : "demo",
+    "password" : "demo123",
+    "email" : "demo@gmail.com",
+    "phone" : "0123456789",
+    "role" : "moderator",
+    "createdAt" : new Date(),
+    "__v" : 0
+},
+
+{
+
+    "username" : "ldvuong",
+    "fullname" : "Lê Đại Vương",
+    "password" : "ldvuong@123",
+    "email" : "ldvuong@hueuni.edu.vn",
+    "phone" : "0123456789",
+    "role" : "admin",
+    "createdAt" : new Date(),
+    "__v" : 0
+},
+
+{
+
+    "username" : "ndnhat",
+    "fullname" : "Nguyễn Đăng Nhật",
+    "password" : "ndnhat@123",
+    "email" : "ndnhat@hueuni.edu.vn",
+    "phone" : "0123456789",
+    "role" : "admin",
+    "createdAt" : new Date(),
+    "__v" : 0
+},
+
+{
+
+    "username" : "hoangtrongloi",
+    "fullname" : "Hoàng Lợi",
+    "password" : "Hoangloi123",
+    "email" : "trongloi194@gmail.com",
+    "phone" : "0988159323",
+    "role" : "guest",
+    "createdAt" : new Date(),
+    "__v" : 0
+},
+
+{
+
+    "username" : "hoangloi",
+    "fullname" : "Hoàng Lợi",
+    "password" : "Hoangloi123",
+    "email" : "trongloi194@gmail.com",
+    "phone" : "0988159323",
+    "role" : "guest",
+    "createdAt" : new Date(),
+    "__v" : 0
+}
+    // Add other data objects similarly
+    // Insert all the provided userData here
+  ];
+  
+  // Inserting data into the database
+  db.getCollection('users').insertMany(userData);
+
+  const userData = [
+    {
+
+        "username" : "john_doe",
+        "password" : "password123",
+        "email" : "john@example.com",
+        "phone" : "123-456-7890",
+        "role" : "guest",
+        "createdAt" : new Date(),
+    },
+    
+    {
+    
+        "username" : "jane_smith",
+        "password" : "password456",
+        "email" : "jane@example.com",
+        "phone" : "987-654-3210",
+        "role" : "guest",
+        "createdAt" : new Date(),
+    },
+    
+    {
+    
+        "username" : "mike_jackson",
+        "password" : "password789",
+        "email" : "mike@example.com",
+        "phone" : "555-555-5555",
+        "role" : "user",
+        "createdAt" : new Date(),
+    },
+    
+    {
+    
+        "username" : "sara_williams",
+        "password" : "passwordabc",
+        "email" : "sara@example.com",
+        "phone" : "111-222-3333",
+        "role" : "moderator",
+        "createdAt" : new Date(),
+    },
+    
+    {
+    
+        "username" : "user_user",
+        "password" : "userpassword",
+        "email" : "user@example.com",
+        "phone" : "999-888-7777",
+        "role" : "guest",
+        "createdAt" : new Date(),
+    },
+    
+    {
+    
+        "username" : "huydapchai",
+        "password" : "12345",
+        "email" : "huydapchai@gmail.com",
+        "phone" : "0362313134",
+        "role" : "guest",
+        "createdAt" : new Date(),
+        "__v" : 0,
+        "fullname" : "Trần Đức Bo lbblb"
+    },
+    
+    {
+    
+        "username" : "nam",
+        "password" : "nam",
+        "email" : "nam@gmail.com",
+        "phone" : "0344911862",
+        "role" : "admin",
+        "createdAt" : new Date(),
+        "__v" : 0,
+        "fullname" : "Nguyễn Danh Nam"
+    },
+    
+    {
+    
+        "username" : "trang",
+        "fullname" : "Nguyễn Thị Thùy Trang lang thang",
+        "password" : "12345",
+        "email" : "trang@gmail.com",
+        "phone" : "0961313134",
+        "role" : "moderator",
+        "createdAt" : new Date(),
+        "__v" : 0
+    },
+    
+    {
+    
+        "username" : "vietdell255",
+        "fullname" : "Hoàng Trọng Việt",
+        "password" : "viettretrau",
+        "email" : "vietdell255@gmail.com",
+        "phone" : "0865156687",
+        "role" : "moderator",
+        "createdAt" : new Date(),
+        "__v" : 0
+    },
+    
+    {
+    
+        "username" : "hoacute",
+        "fullname" : "Nguyễn Thị Hòa",
+        "password" : "12345",
+        "email" : "hoacute1234@gmail.com",
+        "phone" : "0335538651",
+        "role" : "moderator",
+        "createdAt" : new Date(),
+        "__v" : 0
+    },
+    
+    {
+    
+        "username" : "lichnguyen",
+        "fullname" : "Nguyễn Quang Lịch",
+        "password" : "12345",
+        "email" : "lichnguyen@hueuni.edu.vn",
+        "phone" : "0335538651",
+        "role" : "admin",
+        "createdAt" : new Date(),
+        "__v" : 0
+    },
+    
+    {
+    
+        "username" : "nguyenvana",
+        "fullname" : "Nguyễn Văn A",
+        "password" : "12345",
+        "email" : "nguyenvana@gmail.com",
+        "phone" : "0345239655",
+        "role" : "moderator",
+        "createdAt" : new Date(),
+        "__v" : 0
+    },
+    
+    {
+    
+        "username" : "demo",
+        "fullname" : "demo",
+        "password" : "demo123",
+        "email" : "demo@gmail.com",
+        "phone" : "0123456789",
+        "role" : "moderator",
+        "createdAt" : new Date(),
+        "__v" : 0
+    },
+    
+    {
+    
+        "username" : "ldvuong",
+        "fullname" : "Lê Đại Vương",
+        "password" : "ldvuong@123",
+        "email" : "ldvuong@hueuni.edu.vn",
+        "phone" : "0123456789",
+        "role" : "admin",
+        "createdAt" : new Date(),
+        "__v" : 0
+    },
+    
+    {
+    
+        "username" : "ndnhat",
+        "fullname" : "Nguyễn Đăng Nhật",
+        "password" : "ndnhat@123",
+        "email" : "ndnhat@hueuni.edu.vn",
+        "phone" : "0123456789",
+        "role" : "admin",
+        "createdAt" : new Date(),
+        "__v" : 0
+    },
+    
+    {
+    
+        "username" : "hoangtrongloi",
+        "fullname" : "Hoàng Lợi",
+        "password" : "Hoangloi123",
+        "email" : "trongloi194@gmail.com",
+        "phone" : "0988159323",
+        "role" : "guest",
+        "createdAt" : new Date(),
+        "__v" : 0
+    },
+    
+    {
+    
+        "username" : "hoangloi",
+        "fullname" : "Hoàng Lợi",
+        "password" : "Hoangloi123",
+        "email" : "trongloi194@gmail.com",
+        "phone" : "0988159323",
+        "role" : "guest",
+        "createdAt" : new Date(),
+        "__v" : 0
+    }
+    // Add other data objects similarly
+  ];
+
+  // Inserting data into the database
+  User.insertMany(userData)
+    .then((docs) => {
+      console.log('Data inserted successfully:', docs);
+    })
+    .catch((err) => {
+      console.error('Error inserting data:', err);
+    });

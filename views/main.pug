@@ -1,0 +1,13 @@
+script(src='https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js')
+
+- var titlePage = title
+- var routes = routes
+
+//- Include partials
+mixin renderPartials({titlePage, routes}) 
+    include ./partials/header.pug 
+    
+
++renderPartials({titlePage, routes})
+
+include ./partials/footer.pug

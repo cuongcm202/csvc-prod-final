@@ -1,0 +1,14 @@
+section.container {
+    margin-top: 50px;
+}
+
+.table-container {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+@media (max-width: 576px) {
+    .table-container {
+        padding-bottom: 15px;
+    }
+}

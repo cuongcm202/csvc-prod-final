@@ -1,0 +1,121 @@
+include ../main.pug
+    
+.container
+  h2.mt-4 Danh sách các file trong hệ thống
+  .row.mb-3
+    .col-sm-3.mt-3.col-lg-12
+      button.btn.badge.bg-primary.me-2(onclick="filterFiles('Dụng cụ lâu bền')") Lọc ra dụng cụ lâu bền
+      button.btn.badge.bg-primary.me-2(onclick="filterFiles('Tài sản cố định')") Lọc ra tài sản cố định
+    .col-sm-3.mt-3.col-lg-12
+      button.btn.badge.bg-success.me-2(onclick="sendRequest('Dụng cụ lâu bền')") Trích xuất dữ liệu dụng cụ lâu bền
+    .col-sm-3.mt-3.col-lg-12
+      button.btn.badge.bg-success.me-2(onclick="sendRequest('Tài sản cố định')") Trích xuất dữ liệu tài sản cố định
+  .table-responsive
+    table#fileTable.table.table-striped
+      thead
+        tr
+          th STT
+          th Tên file
+          th Kích thước (bytes)
+          th Thời gian tạo
+          th Chức năng
+      tbody#fileTableBody
+        // File list will be rendered here
+script.
+  function formatTimestamp(timestamp) {
+    const dateObj = new Date(timestamp);
+
+    const year = dateObj.getUTCFullYear();
+    const month = ('0' + (dateObj.getUTCMonth() + 1)).slice(-2);
+    const day = ('0' + dateObj.getUTCDate()).slice(-2);
+    const hours = ('0' + dateObj.getUTCHours()).slice(-2);
+    const minutes = ('0' + dateObj.getUTCMinutes()).slice(-2);
+    const seconds = ('0' + dateObj.getUTCSeconds()).slice(-2);
+
+    const formattedTime = `${year}${month}${day}-${hours}${minutes}${seconds}`;
+    return formattedTime;
+  }
+
+  async function fetchFiles() {
+      const response = await fetch('/api/v1/exports');
+      const data = await response.json();
+      //- console.log('data:\n',data[0])
+      function sortByCreationTime(results) {
+        return results.sort((a, b) => {
+          const timeA = new Date(a.created).getTime();
+          const timeB = new Date(b.created).getTime();
+          return timeB - timeA;
+        });
+      }
+      // Function to convert UTC time to UTC+7 time
+      function convertTime(utcTimeString) {
+        const utcTime = new Date(utcTimeString);
+        const offset = 7 * 60 * 60 * 1000; // 7 hours in milliseconds
+        const utcPlus7Time = new Date(utcTime.getTime() + offset);
+        return utcPlus7Time.toISOString();
+      }
+
+      // Iterate through data and convert 'created' field to UTC+7 time
+      data.forEach(entry => {
+          entry.created = convertTime(entry.created);
+      });
+      return sortByCreationTime(data);
+    }
+
+    async function deleteFile(fileName) {
+      const response = await fetch(`/api/v1/exports/${fileName}`, { method: 'DELETE' });
+      const result = await response.json();
+      console.log(result.message);
+      // Reload the file list after deletion
+      renderFiles(await fetchFiles());
+    }
+
+    function downloadFile(fileName) {
+      window.location.href = `/api/v1/exports/${fileName}/download`;
+    }
+
+    function renderFiles(files) {
+      const fileTableBody = document.getElementById('fileTableBody');
+      fileTableBody.innerHTML = '';
+      files.forEach((file, index) => {
+        const row = `
+          <tr>
+            <td>${index + 1}</td>
+            <td>${file.name}</td>
+            <td>${file.size}</td>
+            <td>${formatTimestamp(file.created)}</td>
+            <td>
+              <button class="btn btn-primary btn-sm me-1" onclick="downloadFile('${file.name}')">Download</button>
+              <button class="btn btn-danger btn-sm" onclick="deleteFile('${file.name}')">Delete</button>
+              <!-- Add buttons for other CRUD operations -->
+            </td>
+          </tr>
+        `;
+        fileTableBody.innerHTML += row;
+      });
+    }
+
+    async function filterFiles(keyword) {
+      const files = await fetchFiles();
+      const filteredFiles = files.filter(file => file.name.startsWith(keyword));
+      renderFiles(filteredFiles);
+    }
+
+    async function sendRequest(deviceTypes) {
+      try {
+        const response = await fetch('/xlsx/update', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ deviceTypes })
+        });
+        const data = await response.json();
+        window.location.assign(window.location.origin  + '/api/v1/show');
+      } catch (error) {
+        console.error('Error:', error);
+      }
+    }
+
+    // Initial rendering
+    fetchFiles().then(renderFiles);

@@ -1,0 +1,113 @@
+include ../../main.pug
+//- link(href='/css/device/loanDevice.css' rel='stylesheet')
+style.
+  body * {
+      color: #f16022;
+  }
+  /* Custom styles */
+  .card {
+  margin-bottom: 20px;
+  }
+  .row-cols-1 > * {
+  margin-bottom: 10px; /* Adjust margin between rows */
+  }
+  .deviceTypeList > li:hover {
+    cursor: pointer;
+  }
+
+  .offcanvas > .offcanvas-body {
+    background-color: #f8f9fa;
+  }
+  
+  .nav-bar-desktop > li:hover {
+    background: #f16022;
+    color: white;
+  }
+
+  .nav-bar-tablet-mobile > li {
+    background-color: #f8f9fa;
+    border: none;
+    color: black;
+  }
+
+  .nav-bar-tablet-mobile > li:hover {
+    background: #cacaca;
+  }
+
+  #pagination a {
+    background-color: #f16022; 
+    border-color: #f16022; 
+  }
+
+  .btn-goToPage {
+    background-color: #f16022; 
+    border-color: #f16022; 
+  }
+
+  .btn-goToPage:hover {
+    background-color: #f16022; 
+    border-color: #f16022; 
+  }
+
+.container-fluid
+  .content
+    h2.mt-5 Những thiết bị đã mượn
+    .row
+      // Sidebar
+      #sidebar.col-md-3.sidebar
+        span.btn.btn-outline-danger.d-md-none(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasExample' aria-controls='offcanvasExample')
+          svg.bi.bi-gear(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='red' viewbox='0 0 16 16')
+            path(d='M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0')
+            path(d='M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z')
+        
+        #offcanvasExample.offcanvas.offcanvas-start(tabindex='-1' aria-labelledby='offcanvasExampleLabel')
+          .offcanvas-header.bg-white.text-dark
+            h5#offcanvasExampleLabel.offcanvas-title Chọn loại thiết bị
+            button.btn-close.text-reset(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
+          .offcanvas-body
+            ul.nav.nav-pills.flex-column.mb-auto.nav-group#deviceTypeList.deviceTypeList.list-group.nav-bar-tablet-mobile
+              // Device types will be inserted here dynamically
+        // Device type list
+        .d-none.d-md-block
+          ul#deviceTypeList.deviceTypeList.list-group.nav-bar-desktop
+            // Device types will be inserted here dynamically
+      // Main content
+      .col-md-9
+        // Search input
+        .input-group.mb-3.mt-2
+          input#searchInput.form-control(type='text' placeholder='Search...' aria-label='Search')
+          button#searchButton.btn.btn-outline-success(type='button') T&igrave;m ki&#x1EBF;m
+        // Device cards container
+        .container
+          #deviceContainer.row.row-cols-1.row-cols-md-2.row-cols-lg-3.g-2.mt-1
+            // Device cards will be inserted here dynamically
+        // Pagination
+        .d-flex.justify-content-between.align-items-center.mt-4
+          p#showingInfo.text-muted(style='@media (max-width: 768.98px) {\
+          display: none\
+          }') Showing 0 of 0 total Devices
+          nav(aria-label='Page navigation')
+            ul#pagination.pagination
+          .input-group(style='width: 100px;')
+            input#pageInput.form-control(type='number' min='1' max='1' value='1')
+            button.btn-goToPage.btn.btn-primary(onclick='goToPage()') Go
+    input#localStorageDataImage(type='hidden' name='imageUrl')
+    input#localStorageDataVideo(type='hidden' name='videoUrl')
+
+// Modal
+#exampleModal.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+  .modal-dialog
+    .modal-content
+      .modal-header
+        h5#exampleModalLabel.modal-title Thông tin thiết bị
+        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+      #modalBody.modal-body
+        // Modal content will be inserted here dynamically
+    
+script.
+  const mockData = !{data}
+  const deviceTypes = !{deviceTypes}
+  const settingSizeImg = !{settingSizeImg}
+  const settingSizeVideo = !{settingSizeVideo}
+
+script(src="/javascript/device/returnDevice.js") 

@@ -1,0 +1,45 @@
+db.getCollection('devicetypes').insertMany(
+    [
+  {
+    "name": "Laptop",
+    "description": "A portable computer that is suitable for use while traveling."
+  },
+  {
+    "name": "Smartphone",
+    "description": "A mobile phone that performs many of the functions of a computer, typically having a touchscreen interface, Internet access, and an operating system capable of running downloaded apps."
+  },
+  {
+    "name": "Tablet",
+    "description": "A mobile device larger than a smartphone and smaller than a laptop, typically having a touchscreen interface and sometimes using a stylus."
+  },
+  {
+    "name": "Desktop Computer",
+    "description": "A personal computer designed to be used at a single location, typically consisting of a monitor, keyboard, and processing unit."
+  },
+  {
+    "name": "Printer",
+    "description": "A device that prints text or illustrations on paper."
+  },
+  {
+    "name": "Scanner",
+    "description": "A device that scans documents or images and converts them into digital files."
+  },
+  {
+    "name": "Router",
+    "description": "A device that forwards data packets between computer networks."
+  },
+  {
+    "name": "Switch",
+    "description": "A device that connects devices together on a computer network by using packet switching to forward data to the destination device."
+  },
+  {
+    "name": "Server",
+    "description": "A computer or software system that provides services to other computers or clients in a network."
+  },
+  {
+    "name": "Storage Device",
+    "description": "A device used to store data, such as a hard drive, solid-state drive, or USB flash drive."
+  }
+]
+
+)

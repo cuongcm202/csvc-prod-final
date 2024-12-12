@@ -1,0 +1,110 @@
+include ../../main.pug
+    
+link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous' referrerpolicy='no-referrer')
+// jQuery Knob CDN
+script(src='https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js' integrity='sha512-NhRZzPdzMOMf005Xmd4JonwPftz4Pe99mRVcFeRDcdCtfjv46zPIi/7ZKScbpHD/V0HB1Eb+ZWigMqw94VUVaw==' crossorigin='anonymous' referrerpolicy='no-referrer')
+link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous')
+script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js' integrity='sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p' crossorigin='anonymous')
+
+link(href='/css/dashboard/dashboard.css' rel='stylesheet')
+
+
+input#menu-toggle(type='checkbox' name='')
+.overlay
+  label(for='menu-toggle')  
+.main-content.container
+  header
+    
+  main
+    section
+      h3.section-head Overview
+      .analytics
+        .analytic
+          input.dial(data-readonly="true" type='text' value=`${(data.arrDeviceIdsNotReturned/data.totalDevices*100).toFixed(0)}` data-max=`${(data.totalDevices/data.arrDeviceIdsNotReturned*100).toFixed(0)}` data-width='100' data-height='100' data-fgcolor='#ffb515' data-thickness='.3')
+          .analytic-info
+            h4.analytic-info_desc Thi&#x1EBF;t b&#x1ECB; ch&#x1B0;a tr&#x1EA3;
+
+            h1.analytic-info_primary(style='color: #ffb515;') #{data.arrDeviceIdsNotReturned}
+
+        .analytic
+          input.dial(data-readonly="true" type='text' value=`${(data.arrDeviceIdsDue/data.arrDeviceIdsNotReturned*100).toFixed(0)}` data-max=`${(data.arrDeviceIdsNotReturned/data.arrDeviceIdsDue*100).toFixed(0)}` data-width='100' data-height='100' data-fgcolor='#ff0000' data-thickness='.3')
+          .analytic-info
+            h4.analytic-info_desc Qu&aacute; h&#x1EA1;n ch&#x1B0;a tr&#x1EA3;
+            h1.analytic-info_primary(style='color: #ff0000;')
+              | #{data.arrDeviceIdsDue}
+        .analytic
+          input.dial(data-readonly="true" type='text' value=`${(data.arrDeviceNotWorking/data.totalDevices*100).toFixed(0)}` data-max=`${(data.totalDevices/data.arrDeviceNotWorking*100).toFixed(0)}` data-width='100' data-height='250' data-fgcolor='#671067' data-thickness='.3')
+          .analytic-info
+            h4.analytic-info_desc Kh&ocirc;ng c&ograve;n ho&#x1EA1;t &dstrok;&#x1ED9;ng
+            h1.analytic-info_primary(style='color: #671067;')
+              | #{data.arrDeviceNotWorking}
+    section 
+      style.
+        .table-custom {
+          //- background-color: white;
+          border: 1px solid #dee2e6;
+          border-radius: 10px;
+          padding: 15px
+        }
+      div.container-inner
+        h3.ps-4 M&#x1AF;&#x1EE2;N CH&#x1AF;A TR&#x1EA2;
+        .input-group.mt-3
+          input#searchInput.form-control(type='text' placeholder='Search...' aria-label='Search')
+          button#searchButton.btn.btn-danger(type='button') T&igrave;m ki&#x1EBF;m
+        .table-container.table.table-custom.table-responsive.bg-white.mt-3
+          table.table.mt-3
+            thead
+              tr
+                th STT
+                th T&ecirc;n &dstrok;&#x1EA7;y &dstrok;&#x1EE7;
+                th T&ecirc;n ng&#x1B0;&#x1EDD;i d&ugrave;ng
+                th Email
+                th S&#x1ED1; &dstrok;i&#x1EC7;n tho&#x1EA1;i
+                th S&#x1ED1; thi&#x1EBF;t b&#x1ECB;
+            tbody#table1-body
+              // Table 1 Body
+          .d-flex.justify-content-between.justify-content-center.align-items-center.mt-4.mb-4
+            p#showingInfo.text-muted Showing 0 of 0 totals
+            nav(aria-label='Page navigation')
+              ul#pagination.pagination(style='margin-bottom: unset')
+                // Pagination links will be dynamically inserted here
+            .input-group(style='width: 100px;')
+              input#pageInput.form-control(type='number' min='1' max='1' value='1')
+              button.btn.btn-primary(onclick='goToPage()') Go
+              // Data will be dynamically inserted here
+        h3.ps-4 QU&Aacute; H&#x1EA0;N CH&#x1AF;A TR&#x1EA2;
+        .input-group.mt-3
+          input#searchInput1.form-control(type='text' placeholder='Search...' aria-label='Search')
+          button#searchButton1.btn.btn-danger(type='button') T&igrave;m ki&#x1EBF;m
+        .table-container.table.table-custom.table-responsive.bg-white.mt-3
+          table.table.mt-3
+            thead
+              tr
+                th STT
+                th T&ecirc;n &dstrok;&#x1EA7;y &dstrok;&#x1EE7;
+                th T&ecirc;n ng&#x1B0;&#x1EDD;i d&ugrave;ng
+                th T&ecirc;n thi&#x1EBF;t b&#x1ECB;
+                th S&#x1ED1; &dstrok;i&#x1EC7;n tho&#x1EA1;i
+                th M&#x1B0;&#x1EE3;n v&agrave;o l&uacute;c
+                th Ng&agrave;y tr&#x1EA3; d&#x1EF1; ki&#x1EBF;n
+            tbody#loan-list
+              // Device loan data will be inserted here
+          .d-flex.justify-content-between.justify-content-center.align-items-center.mt-4.mb-4
+            p#showingInfo1.text-muted Showing 0 of 0 totals
+            nav(aria-label='Page navigation')
+              ul#pagination1.pagination(style='margin-bottom: unset')
+                // Pagination links will be dynamically inserted here
+            .input-group(style='width: 100px;')
+              input#pageInput1.form-control(type='number' min='1' max='1' value='1')
+              button.btn.btn-primary(onclick='goToPage1()') Go
+        
+
+    
+
+script.
+  var arrUserIdsNotReturned = !{arrUserIdsNotReturned}
+  var arrDeviceIdsDue = !{arrDeviceIdsDue}
+
+script(src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.js')
+script(src="/javascript/dashboard/dashboard.js") 

@@ -1,0 +1,102 @@
+db.getCollection('locations').insertMany([
+    {
+        "name": "Location 21",
+        "description": "Description for Location 21",
+        "address": "Address 21"
+    },
+    {
+        "name": "Location 22",
+        "description": "Description for Location 22",
+        "address": "Address 22"
+    },
+    {
+        "name": "Location 23",
+        "description": "Description for Location 23",
+        "address": "Address 23"
+    },
+    {
+        "name": "Location 24",
+        "description": "Description for Location 24",
+        "address": "Address 24"
+    },
+    {
+        "name": "Location 25",
+        "description": "Description for Location 25",
+        "address": "Address 25"
+    },
+    {
+        "name": "Location 26",
+        "description": "Description for Location 26",
+        "address": "Address 26"
+    },
+    {
+        "name": "Location 27",
+        "description": "Description for Location 27",
+        "address": "Address 27"
+    },
+    {
+        "name": "Location 28",
+        "description": "Description for Location 28",
+        "address": "Address 28"
+    },
+    {
+        "name": "Location 29",
+        "description": "Description for Location 29",
+        "address": "Address 29"
+    },
+    {
+        "name": "Location 30",
+        "description": "Description for Location 30",
+        "address": "Address 30"
+    },
+    {
+        "name": "Location 31",
+        "description": "Description for Location 31",
+        "address": "Address 31"
+    },
+    {
+        "name": "Location 32",
+        "description": "Description for Location 32",
+        "address": "Address 32"
+    },
+    {
+        "name": "Location 33",
+        "description": "Description for Location 33",
+        "address": "Address 33"
+    },
+    {
+        "name": "Location 34",
+        "description": "Description for Location 34",
+        "address": "Address 34"
+    },
+    {
+        "name": "Location 35",
+        "description": "Description for Location 35",
+        "address": "Address 35"
+    },
+    {
+        "name": "Location 36",
+        "description": "Description for Location 36",
+        "address": "Address 36"
+    },
+    {
+        "name": "Location 37",
+        "description": "Description for Location 37",
+        "address": "Address 37"
+    },
+    {
+        "name": "Location 38",
+        "description": "Description for Location 38",
+        "address": "Address 38"
+    },
+    {
+        "name": "Location 39",
+        "description": "Description for Location 39",
+        "address": "Address 39"
+    },
+    {
+        "name": "Location 40",
+        "description": "Description for Location 40",
+        "address": "Address 40"
+    }
+])

@@ -1,0 +1,74 @@
+include ../../main.pug
+
+.container.mt-5
+  h2 Thông tin vị trí
+  .form-group.search-box
+    .input-group
+      input#searchInput.form-control(type='text' placeholder='Search...')
+      button#searchButton.btn.btn-outline-success(type='button') Tìm kiếm
+      //- span#searchButton.input-group-text(styles='')
+      //-   i.fas.fa-search
+
+  .form-check.form-switch
+    .mt-3
+      input#flexSwitchCheckDefault.switchRetrieveAllData.form-check-input(type='checkbox' role='switch')
+      label.form-check-label(for='flexSwitchCheckDefault') Hiển thị tất cả
+  .table-responsive
+    table.table.mt-3.table-striped
+      thead
+        tr
+          th STT
+          th Tên
+          th Mô tả
+          th Địa chỉ
+          th Chức năng
+      tbody#locationTableBody
+        // Location data will be inserted here
+        .warrper.text-center
+          #spinner.spinner-border.text-primary(role='status')
+            span.visually-hidden Loading...
+  
+  .d-flex.justify-content-between.justify-content-center.align-items-center.mt-4.mb-4
+    style.
+      @media (max-width: 768.98px) {
+        #showingInfo {
+          display: none; 
+        }
+      }
+    p#showingInfo.text-muted() Showing 0 of 0 total Users
+
+    nav(aria-label='Page navigation')
+      ul#pagination.pagination(style='margin-bottom: unset')
+    .input-group(style='width: 100px;')
+      input#pageInput.form-control(type='number' min='1' max='1' value='1')
+      button.btn.btn-primary(onclick='goToPage()') Go
+      // Data will be dynamically inserted here
+
+// Supplier Modal
+#locationModal.modal.fade(tabindex='-1' aria-labelledby='supplierModalLabel' aria-hidden='true')
+  .modal-dialog
+    .modal-content
+      .modal-header
+        h5#supplierModalLabel.modal-title Thông tin vị trí
+        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+      .modal-body
+        // Form for supplier information
+        form#supplierForm(method='post' action='/locations/update')
+            input#locationName-holder.form-control(type='text' name='nameholder' hidden readonly="")
+            .mb-3
+                label.form-label(for='locationName') Tên vị trí
+                input#locationName.form-control(type='text' name='name' required="")
+            .mb-3
+                label.form-label(for='locationDescription') Mô tả
+                input#locationDescription.form-control(type='text' name='description' required="")
+            .mb-3
+                label.form-label(for='locationAddress') Địa chỉ
+                input#locationAddress.form-control(type='text' name='address' required="")
+            // Add more fields for location information as needed
+            button.btn.btn-primary.w-100(type='submit') Sửa
+
+// Include your JavaScript file
+script.
+  var mockData = !{locations}
+script(src="/javascript/locations/detailLocations.js")
+  
